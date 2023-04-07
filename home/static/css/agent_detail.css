@@ -117,30 +117,30 @@
 
 
 .agent-abilities video{
-  opacity: .1;
+  opacity: 1;
   border-radius: 0px 0px 0px 0px;
 }
 .agent-abilities p{
-  opacity: .1;
+  opacity: .7;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   justify-items: center;
-  border: px solid rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
 }
+
 
 .agent-abilities img:hover{
   filter: brightness(1);
   background-color: rgb(253, 54, 54);
   transition: .2s ease-in-out;
+  transform: scale(1.05);
 }
 
 
-.agent-abilities img:hover + p{
-  opacity: 1;
-  transition: .3s ease-in-out;
-}
+
 .agent-abilities p:hover {
   opacity: 1;
   transition: .3s ease;
+  transform: scale(1.05);
 }
 .agent-abilities p:hover + video{
   opacity: 1;
@@ -148,10 +148,6 @@
 }
 .agent-abilities video:hover {
   opacity: 1;
-  transform: scale(2);
-  transition: .3s ease-in-out;
-  border-radius: 20px 20px 20px 20px;
-  padding: 2px;
-  overflow: hidden;
-  border: 1px solid red;
+  transition: .3s ease;
+  transform: scale(1.05);
 }

@@ -65,4 +65,26 @@
     transform: scale(.95);
     transition: .5s ease;
 }
-  
+/* gun detail */ 
+.gundetail{
+    display: block;
+    align-items: center;
+    text-align: leftt;
+    margin-left: 500px;
+}
+
+.gundetail h1{
+    text-transform: uppercase;
+    font-family: valorant;
+}
+
+.gundetail p{
+    color: #7e7e7e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 500px;
+}
+
+.gundetail img:hover{
+    transform: scale(1.1);
+    transition: .1s ease-out;
+}
