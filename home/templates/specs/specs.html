@@ -1,0 +1,53 @@
+{% extends  'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    Specs
+{% endblock title%}
+
+{% block content%}
+
+    <header class="specsIntro">
+      <h1>Specs</h1>
+    </header>
+
+    <main class="hardwareIntro">
+      <div class="hardwareBlock">
+        <h2>pc hardware requirements</h2>
+        {% for spec in specs %}
+        <div class="hardwareBlock2">
+          <div><img src=" {% static 'images/computer.png' %}" alt="Image of Computer" /></div>
+          <p>{{spec.windows}}</p>
+          <p>{{spec.ram}}</p>
+          <p>{{spec.vram}}</p>
+        </div>
+        <div class="hardwareBlock3">
+          <div class="hardwareSub1">
+            <div class="miniBlock1">
+              <img src=" {% static 'images/dash.png' %}" alt="Image of Dash" />
+            </div>
+            <p>Minimum specs / 30 FPS</p>
+            <p>Recommended specs / 60 FPS</p>
+            <p>High-end specs / 144+ FPS</p>
+          </div>
+          <div class="hardwareSub2">
+            <div class="miniBlock2">
+              <img src=" {% static 'images/cpu.png' %}" alt="Image of Dash" />
+            </div>
+            <p>{{spec.cpu_1}}</p>
+            <p>{{spec.cpu_2}}</p>
+            <p>{{spec.cpu_3}}</p>
+          </div>
+          <div class="hardwareSub3">
+            <div class="miniBlock3">
+              <img src=" {% static 'images/gpu.png' %}" alt="Image of Dash" />
+            </div>
+            <p>{{spec.gpu_1}}</p>
+            <p>{{spec.gpu_2}}</p>
+            <p>{{spec.gpu_3}}</p>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </main>
+
+{% endblock content%}

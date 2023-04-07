@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {% block title %}  {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/button.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/weapon.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/agent.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/map.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/agent_detail.css'%}" />
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dtbkn91rt/image/upload/v1680739254/faviconicon_ycc0ow.png">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="{% url 'home:home' %}"> <img src="{% static 'img/faviconicon.png' %}" alt="Intro Image"  height="30" width="30">  </a>
+          <a href="{% url 'home:agents' %}">Agents</a>
+          <a href="{% url 'home:maps' %}">Maps</a>
+          <a href="{% url 'home:weapons' %}">Arsenals</a>
+          <a href="{% url 'home:specs' %}">Specs</a>
+          <a href="{% url 'home:news' %}">News</a>
+          <a href="https://valorantesports.com/schedule">ESPORT</a>
+          
+        </li>
+      </ul>
+    </nav>
+        
+{% block content %}
+    <!--body-->
+{% endblock content %}
+         <script src="{% static 'js/map.js'%}"></script> 
+        <footer>
+            <div class="ender">
+                <p1>
+                    <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" height="50" width="50"></img></a>
+                    <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png'%}" alt="Facebook" height="50" width="50"></img></a>
+                    <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png'%}" alt="YouTube" height="50" width="50"></img></a>
+                    <br>
+                    <div>
+                        <button class="btn">
+                          <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content">DOWNLOADS</span>
+                          </span>
+                        </button>
+                    </div>
+                </p1>
+            </div>
+                            <p>
+                              &copy; 2020 Riot games, inc, riot games, <span>valorant</span>, and any
+                              associated logos are trademarks, service marks, and/or registered
+                              trademarks of riot games, inc.
+                            </p>
+                            
+          </footer>
+        </body>
+      </html>

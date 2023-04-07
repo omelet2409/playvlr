@@ -1,0 +1,42 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    NEWS
+{% endblock title%}
+
+{% block content %}
+<h2> // LATEST NEWS </h2>
+<h4> Update the latest news of Valorant and Riot Games </h4>
+    {% for news in newss %}
+    
+    <div class="valorantIntro">
+      <div class="introColumn">
+        <div class="introLeft">
+          <h2>{{news.name}}</h2>
+          <p>
+            {{news.description}}
+          </p>
+          <i> {{news.datetime}} </i>
+        </div>
+        <div class="introRight">
+          <a href ="{{news.link}}">
+          <div class="link">
+            <img src = "{{news.img.url}}">
+          </div>
+          </a
+        </div>
+      </div>
+    </div>
+
+
+    {% endfor %}  
+
+    
+{% endblock content%}
+
+
+
+               
+
+

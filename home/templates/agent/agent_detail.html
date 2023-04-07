@@ -1,0 +1,75 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    {{agent.name}}
+{% endblock title %}
+
+{% block content %}
+<!--body-->
+<header>
+    
+    <div class="sova-img-container">
+        <h2> {{agent.role}} </h2>
+      <img src="{{agent.img.url}}" alt="sova-img" class="sova-img" />
+      
+      <p>// BIOGRAPHY <br><br> {{agent.bio}}  <BR> <BR>// COUNTRY: "{{agent.country}}"</p>
+      <hr>
+    </div>
+    <div class="header-text-container">
+      <img src ="{% static 'img/agent-background-generic.gif' %}" />
+      <div class="desc-container">
+        <p> AGENT #{{agent.number}}</p>
+        <h2> <img src="{{agent.role_icon.url}}" alt="" />// {{agent.name}}</h2>
+        
+      </div>
+    </div>
+  </header>
+  <!-- END OF HEADER -->
+  <div class = "special">
+      <h1> SPECIAL ABILITIES </h1>  
+
+  </div>
+  <!-- SKILL -->
+  <div class="agent-abilities">
+    <!-- ability q -->
+    <img src="{{agent.skill_q_icon.url}}"> 
+          <p> {{agent.skill_q_name}} <br> <br>{{agent.skill_q_description}} </p> 
+            <video autoplay muted loop width="100%" controls="">
+              <source src="{{agent.skill_q_video.url}}" type="video/mp4"> </video>
+    </img>
+
+    <!-- ability e -->
+    <img src="{{agent.skill_e_icon.url}}"> 
+          <p> {{agent.skill_e_name}} <br> <br> {{agent.skill_e_description}} </p> 
+            <video autoplay muted loop width="100%" controls="">
+              <source src="{{agent.skill_e_video.url}}" type="video/mp4"> </video>
+    </img>
+    
+    <!-- ability c -->
+    <img src="{{agent.skill_c_icon.url}}"> 
+        <p> {{agent.skill_c_name}} <br> <br> {{agent.skill_c_description}} </p> 
+            <video autoplay muted loop width="100%" controls="">
+              <source src="{{agent.skill_c_video.url}}" type="video/mp4"></video>
+    </img>
+
+    <!-- ability x -->
+    <img src="{{agent.skill_x_icon.url}}"> 
+        <p> {{agent.skill_x_name}} <br> <br> {{agent.skill_x_description}} </p> 
+            <video autoplay muted loop width="100%" controls="">
+              <source src="{{agent.skill_x_video.url}}" type="video/mp4"></video>
+    </img>
+  </div>
+  <hr />
+  <br /><br /><br /><br /><br />
+  <!-- END OF SKILL -->
+
+  <!-- OTHER AGENTS -->
+  
+<!--skill-->
+
+
+<br>
+<hr>
+<br>
+{% endblock content %}

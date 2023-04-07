@@ -1,0 +1,149 @@
+.agentsMainColumn h4{
+    font-family: valorant;
+    font-style: italic;
+}
+
+.mapcontainer {
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    height: auto;
+    width: 100%;
+}
+
+.mapitem{
+    border: 0px solid black;
+    margin: 5px;
+    padding-bottom: 30px;
+}
+.mapitem img {
+    overflow:visible;
+    filter: grayscale(80%);
+    
+}
+.mapitem img:hover {
+    border: 0px solid rgb(255, 0, 0);
+    transform: scale(1.03);
+    transition: .2s ease-in-out;
+    filter: grayscale(0%);
+}
+
+.mapitem p{
+    color: red;
+    font-family: valorant;
+    text-align: center;
+}
+
+.mapcontainer img{
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+body{
+    height: 100vh;
+    background-color:antiquewhite;
+}
+
+.mcontainer{
+    height: 80%;
+    width: 80%;
+    margin: 50px auto; 
+}
+
+.mmain {
+    height: 80%;
+    margin:20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.mmain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-feature{
+    transition:  1s;
+
+}
+.img-feature p{
+    color: red;
+}
+.img-feature:hover{
+    transition:  1s ease-in-out;
+}
+
+
+.list-image {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+
+.list-image img{
+    flex: 1;    
+    padding: 5px;
+    cursor: pointer;
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    object-position: center ;
+}
+
+
+
+
+
+.control{
+    position: absolute;
+    top: 50%;
+    height: 5%;
+    width: 5%;
+    color: white;
+    transform: translateY(-50%);
+    -webkit-filter: invert(1);
+    filter:invert(100%);
+    cursor: pointer;
+
+}
+
+.prev {
+    left: 10px;
+
+}
+
+.next {
+    right: 10px;
+}
+
+.active{
+    background-color: rgb(128, 0, 0);
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}@keyframes slideRight {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}

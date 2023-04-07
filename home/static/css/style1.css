@@ -1,0 +1,720 @@
+body {
+  font-family: RixSGo,Tahoma,sans-serif;
+  background-color: #ece7e1;
+  cursor: default;
+}
+
+/*-----------------------  Navigation  -----------------------*/
+
+nav {
+  position: relative;
+  background-color: #111111;
+  padding: 15px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 5px 0px;
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  padding: 20px;
+  text-transform: uppercase;
+  color: #ece7e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #ff4655;
+}
+
+
+footer {
+  padding-top: 50px;
+  background-color: #111111;
+  color: #7c7e82;
+  text-align: center;
+
+}
+
+footer p {
+  padding: 0 37% 0 37%;
+  font-size: 80%;
+}
+
+footer span {
+  text-transform: uppercase;
+}
+.introColumn {
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 100px;
+}
+/*-----------------------  IndexHeader  -----------------------*/
+
+.indexHeader {
+  color: #ece7e1;
+  height: 800px;
+  padding: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  margin-bottom: 5px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+  background-image: url(../img/bg-img.gif);
+}
+
+
+.indexHeader h1{
+  font-family: Valorant;
+}
+.indexHeaderRole {
+  color: #ece7e1;
+  height: 800px;
+  padding: 5px;
+  background-image: url(../img/bg-img.gif);
+  background-position: 50% 85%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+}
+.indexHeaderRole p{
+  color: #383e3a;
+}
+.indexHeaderRole h1{
+  font-size: large;
+  color: white;
+  font-family: Valorant;
+}
+
+.indexHeader1 {
+  color: #ece7e1;
+  height: 800px;
+  padding: 1px;
+  background-image: url(../img/news_header.png);
+  background-position: 50% 85%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.indexHeader p {
+  font-weight: bold;
+}
+
+.indexHeader h1 {
+  font-size: 800%;
+  margin: 0 0 30px 0;
+}
+
+.indexHeader a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 95%;
+  text-transform: uppercase;
+  color: #ece7e1;
+  background-color: #ff4654;
+  padding: 15px 60px;
+  border-radius: 5px;
+}
+
+.indexHeader a:hover {
+  background-color: #0f1923;
+  transition: 0.5s;
+}
+
+/*-----------------------  Index-valorantIntro  -----------------------*/
+
+.valorantIntro {
+  width: 100%;
+  margin: 80px 0 40px 0px;
+}
+
+.valorantIntro h1 {
+  color: #0f1922;
+  text-transform: uppercase;
+  font-size: 400%;
+}
+
+
+
+#intro {
+  margin-left: 400px;
+}
+.intro h1{
+  font-family: Valorant;
+}
+
+.introLeft {
+  width: 15%;
+  margin-left: 400px;
+}
+
+.introRight {
+  width: 50%;
+  text-align: center;
+}
+
+p {
+  line-height: 150%;
+}
+
+.introLeft h2 {
+  color: #383e3a;
+  text-transform: uppercase;
+}
+
+.introLeft p {
+  color: #7f8286;
+  padding-bottom: 30px;
+  border-bottom: solid 1px black;
+}
+
+.introLeft span {
+  text-transform: uppercase;
+}
+
+.introRight img {
+  height: 400px;
+  width: 700px;
+}
+
+/*-----------------------  insex-intro-page  -----------------------*/
+.indexIntroContainer{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 4px;
+  justify-content: center;
+  position: relative;
+  
+}
+.indexIntroContaineriner{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  border: 0px solid black;
+}
+.indexIntroContainerinerr{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  border: 0px solid black;
+  background-color: #ff4a4a;
+}
+
+.introitem{
+  border: 0px solid red;
+}
+
+
+.introitem img{
+  height: 450px;
+  width: 800px;
+  margin: 100px 300px 10px 0px;
+  border: 3px solid red;
+  padding: 5px 5px 5px 5px;
+}
+
+
+.introitem p{
+  color: rgb(124, 124, 124);
+  text-align: left;
+  margin: 40px 200px 40px 10px;
+  padding-left: 350px;
+}
+.introitem h1{
+  font-size: 120px;
+  margin: 10px 100px 10px 300px;
+}
+
+.introitem h3{
+  font-size: 20px;
+  font-style: italic;
+  color: #3a3a3a;
+  margin-left: 400px;
+}
+.introitem a{
+  padding: 20px 0px 100px 400px;
+}
+.introitem video{
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+.introitem1{
+  border: 0px solid green;
+  margin: 5px 5px 5px 5px;
+}
+
+.introitem1 img{
+  padding-left: 300px;
+  height: 650px;
+  width: 1000px;
+}
+
+.introitem1 p{
+  color: white;
+  text-align: left;
+  margin: 0px 60px 0px 40px;
+  padding-right: 400px;
+}
+.introitem1 h1{
+  font-size: 120px;
+  color: white;
+  text-align: left;
+  margin: 10px 400px 10px 10px;
+}
+.introitem1 h3{
+  font-size: 20px;
+  font-style: italic;
+  color: #ffffff;
+  padding-right: 200px;
+  margin: 50px 0px 50px 100px;
+}
+.introitem1 a{
+  padding-right: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.introitem8 {
+  text-align: right;
+}
+.introitemm{
+  margin: 50px 0px 0px 0px;
+  border: 0px solid blue;
+
+}
+.introitemm img{
+  height: 450px;
+  width: 800px;
+  margin: 100px 300px 50px 10px;
+  border: 3px solid red;
+  padding: 5px 5px 5px 5px;
+}
+
+.introitemm p{  
+  color: rgb(124, 124, 124);
+  text-align: left;
+  margin: 0px 200px 40px 0px;
+  padding-left: 450px;
+}
+.introitemm h1{
+  font-size: 120px;
+  margin: 40px 100px 10px 400px;
+}
+.introitemm h3{
+  font-size: 20px;
+  font-style: italic;
+  color: #3a3a3a;
+  margin: 50px 0px 0px 450px;
+}
+
+.introitemm a{
+  padding-left: 400px;
+}
+
+
+.introitem0{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.introitem5{
+  
+
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.introitem9{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+
+
+/*intro agents */
+/*-----------------------  Agents-page  -----------------------*/
+
+.agentsImages {
+  padding: 30px 50px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agentsImages img {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.agentsMainText {
+  margin-left: 70px;
+  width: 20%;
+  border-bottom: 1px solid black;
+  margin-top: 70px;
+}
+
+.agentsMainText h2 {
+  color: #383e3a;
+}
+
+.agentsMainText p {
+  color: #7c7e86;
+}
+
+/*-----------------------  Specs-page  -----------------------*/
+
+.specsIntro {
+  background-image: url(../img/agent-background-generic.gif);
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  color: #ece7e1;
+  padding: 50px;
+  height: 450px;
+}
+
+.specsIntro h1 {
+  margin-top: 160px;
+  margin-left: 370px;
+  font-size: 400%;
+  text-transform: uppercase;
+  border-top: solid 1px #ece7e1;
+  width: 20%;
+  padding-top: 40px;
+  font-family: Valorant;
+}
+
+.hardwareIntro {
+  margin-left: 430px;
+  width: 60%;
+}
+
+.hardwareBlock h2 {
+  color: #0f1923;
+  text-transform: uppercase;
+  font-size: 200%;
+  margin-top: 80px;
+}
+
+.hardwareBlock2 p {
+  background-color: #0f1923;
+  color: #ece7e1;
+  margin-left: 1px;
+  padding: 38px;
+  width: 20%;
+  text-align: center;
+}
+
+.hardwareBlock2 img {
+  margin-top: 4px;
+}
+
+.hardwareBlock2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hardwareSub1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hardwareSub2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#hardwareSub2 {
+  color: #0f1923;
+  font-weight: bold;
+}
+
+.hardwareSub3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#hardwareSub3 {
+  color: #0f1923;
+  font-weight: bold;
+}
+
+.hardwareSub1 p {
+  background-color: #8c978f;
+  color: #ece7e1;
+  padding: 38px;
+  width: 20%;
+  text-align: center;
+  margin-left: 1px;
+}
+
+.miniBlock1 {
+  margin-top: 4px;
+}
+
+.hardwareSub2 p {
+  background-color: #8c978f;
+  color: #ece7e1;
+  padding: 38px;
+  width: 20%;
+  text-align: center;
+  margin-left: 1px;
+}
+
+.hardwareSub3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hardwareSub3 p {
+  background-color: #8c978f;
+  color: #ece7e1;
+  padding: 38px;
+  width: 20%;
+  text-align: center;
+  margin-left: 1px;
+}
+
+.hardwareSub2 {
+  margin-top: -31px;
+}
+
+.hardwareSub3 {
+  margin-top: -31px;
+  margin-bottom: 100px;
+}
+
+/*-----------------------  Signup-page  -----------------------*/
+
+.signupWrapper {
+  background-image: url(../images/valorantbg.jpg);
+  background-position: center top;
+  padding-bottom: 80px;
+}
+
+.accountIntro {
+  color: #ece7e1;
+  font-size: 200%;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-left: 120px;
+  width: 30%;
+}
+
+.formBlock {
+  margin-left: 80px;
+  background-color: #ece7e1;
+  width: 25%;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.emailIntro {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.email input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.newsletter {
+  color: #1a1a1a;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.email {
+  padding: 10px;
+}
+
+.ageIntro h1 {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.ageIntro p {
+  color: #1a1a1a;
+  font-size: 120%;
+  margin-left: 10px;
+}
+
+.age label {
+  color: #1a1a1a;
+  padding: 10px;
+}
+
+.age {
+  margin-bottom: 50px;
+}
+
+.usernameIntro h1 {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.usernameIntro p {
+  color: #1a1a1a;
+  font-size: 120%;
+  margin-left: 10px;
+}
+
+.username input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.username {
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.passwordIntro h1 {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.passwordIntro p {
+  color: #1a1a1a;
+  font-size: 120%;
+  margin-left: 10px;
+}
+
+.password input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.password {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.passwordCheck input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.passwordCheck {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.submit {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.submit input {
+  background-color: #ff4655;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submit input:hover {
+  background-color: #0f1923;
+  transition: 0.5s;
+}
+.ender {
+  text-align: center;
+}
+.ho-social{
+  filter: grayscale(100%);
+  margin-left: 50px; 
+  margin-bottom: -600px;
+  margin-top: 300px;
+  font-weight: bold;
+}
+.ho-social img {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+}
+
+.introheader{
+  padding-left: 100px;
+}
+.introheader h1{
+  color: rgb(43, 43, 43);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+.introheader p{
+  color: #3a3a3a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.introRight link{
+  background-color: #0f192200;
+}
+
+.introRight:hover link {
+  background-color: rgba(255, 0, 0, 0.527);
+  transition: all .15s ease;
+}
+
+/* tutorials part  */
+.tutorial{
+  margin: 50px 100px 0px 400px;
+}
+.tutorial img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+}

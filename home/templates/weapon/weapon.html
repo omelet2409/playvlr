@@ -1,0 +1,41 @@
+{% extends 'home_base.html'%}
+
+{% load static %}
+{% block title %}
+      ARSENALS
+{% endblock title %}
+
+{% block content %}
+
+        <main class="agentsMainColumn">
+          <div class="agentsMainText">
+            <h2>//  CHOOSE YOUR WEAPON </h2>
+            <p>
+              Grap your weapon, prepare your spirits for the bloody gun fight, take out your enemies and Victory will be yours.
+            </p>
+          </div>
+    <!--body-->
+    
+        <div class="container">
+
+            {% for weapon in weapons %}
+            <div class="item">
+              <a href="{{weapon.get_absolute_url}}">
+              <button class="btn">
+                <span class="btn__inner"><img src ="{{weapon.img.url}}">
+                  <span class="btn__slide">{{weapon.name}}</span>
+                  <span class="btn__content">
+                    {{weapon.type}}
+                  </span>
+                  <span class = "text">
+                    
+                  </span>
+                </span>
+              </button></a>
+            </div>
+            {% endfor %}
+        </div>
+
+
+    <!--endbody-->
+    {% endblock content %}

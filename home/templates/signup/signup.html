@@ -1,0 +1,36 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    TUTORIALS
+{% endblock title%}
+
+{% block content %}
+
+
+{% for signup in signups %}
+
+<div class="tutorial">
+    <img src="{{signup.img1.url}}">
+    <hr>
+    <img src="{{signup.img2.url}}">
+    <hr>
+    <img src="{{signup.img3.url}}">
+    <hr>
+    <img src="{{signup.img4.url}}">
+    <hr>
+    <img src="{{signup.img5.url}}">
+    <hr>
+    <img src="{{signup.img6.url}}">
+    <hr>
+    <img src="{{signup.img7.url}}">
+    <hr>
+</div>
+
+{% endfor %}
+<br>
+<br>
+<hr>
+<br>
+
+{% endblock content%}

@@ -1,0 +1,46 @@
+.agentsMainText h2{
+    font-family: valorant;
+}
+
+.acontainer {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    height: auto;
+    width: 40%;
+    margin: 50px;
+}
+.agents-container{
+    padding: 10px;
+}
+.agents-container img{
+    filter: grayscale(80%);
+    border: 5px solid rgba(196, 2, 2, 0);
+}
+
+.agents-container img:hover{
+    border: 5px solid red;
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
+    background-image: url(../img/agent-background-generic.gif);
+}
+.aitem{
+    border: 5px solid rgb(255, 0, 0);
+    margin: 5px;
+}
+
+.acontainer img{
+    width: 100%;
+    height: 80%;
+}
+
+.aitem img:hover{
+    transform: scale(1.25);
+    transition: .5s;
+}
+
+.aitem p{
+    color: red;
+    text-align: center;
+    font-family: valorant;
+    font-size: large;
+}

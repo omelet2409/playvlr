@@ -1,0 +1,157 @@
+#myVideo {
+    z-index: -2;
+  }
+  
+  .sova-img-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 10%;
+  }
+  .sova-img-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 15%;
+  }
+  .sova-img-container p{
+    justify-content: right;
+    font-size: 25px;
+    color: white;
+    padding-top: 10%;
+    padding-right: 100px;
+    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .sova-img-container h2{
+    text-shadow: -3px 0 #ff4655, 0 3px #ff4655,      3px 0 #ff4655, 0 -3px #ff4655;
+    
+    font-size: 100px;
+    margin-left: 200px;
+    transform: rotate(-90deg);
+    padding-top: 200px;
+    padding-left: 20px;
+    font-family: valorant;
+    color: antiquewhite;
+  }
+  .sova-img-container h3{
+    color: antiquewhite;
+  }
+  .header-text-container h1 {
+    font-size: 20rem;
+  }
+  
+  .header-text-container h2 {
+    margin:0;
+    font-family: valorant;
+  }
+  
+  .header-text-container .desc-container {
+    width: 30%;
+  }
+  
+  .header-text-container img {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .header-text-container p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: justify;
+  }
+  .header-text-container {
+    font-size: 3rem;
+    padding: 0;
+    color: #0f1923;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .header-text-container .desc-container {
+    width: 100%;
+    padding: 0;
+  }
+  .desc-container p{
+    font-family: valorant;
+    padding-left: 100px;
+    color: red;
+  }
+
+  .header-text-container h1 {
+    text-align: center;
+    font-size: 15vw;
+    font-weight: 900;
+  }
+
+  .header-text-container h2 {
+    color: #fff;
+    font-size: 6vw;
+    background-color: #ff4655;
+    padding-left: 6px;
+  }
+
+  .header-text-container h2 img {
+    width: 5vw;
+    padding-top: 40px;
+  }
+
+  /* SPECIAL ABILITIES */
+
+.agent-abilities{
+  display: grid;
+  grid-template-columns: 180px 400px 500px;
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.agent-abilities img{
+  padding: 10px;
+  filter: brightness(.2);
+  justify-content: center;
+  border: px solid red;
+  width: 100%;
+}
+
+
+.agent-abilities video{
+  opacity: .1;
+  border-radius: 0px 0px 0px 0px;
+}
+.agent-abilities p{
+  opacity: .1;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-items: center;
+  border: px solid rgb(0, 0, 0);
+}
+
+.agent-abilities img:hover{
+  filter: brightness(1);
+  background-color: rgb(253, 54, 54);
+  transition: .2s ease-in-out;
+}
+
+
+.agent-abilities img:hover + p{
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+.agent-abilities p:hover {
+  opacity: 1;
+  transition: .3s ease;
+}
+.agent-abilities p:hover + video{
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+.agent-abilities video:hover {
+  opacity: 1;
+  transform: scale(2);
+  transition: .3s ease-in-out;
+  border-radius: 20px 20px 20px 20px;
+  padding: 2px;
+  overflow: hidden;
+  border: 1px solid red;
+}
