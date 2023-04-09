@@ -177,6 +177,7 @@ footer span {
   margin-left: 400px;
 }
 
+
 .introRight {
   width: 50%;
   text-align: center;
@@ -202,6 +203,10 @@ p {
 }
 
 .introRight img {
+  height: 400px;
+  width: 700px;
+}
+.introRight img:hover {
   height: 400px;
   width: 700px;
 }
@@ -701,8 +706,12 @@ p {
   background-color: #0f192200;
 }
 
+.link img:hover {
+  filter: brightness(.6);
+  transform: scale(1.02);
+  transition: .2s ease-in-out;
+}
 .introRight:hover link {
-  background-color: rgba(255, 0, 0, 0.527);
   transition: all .15s ease;
 }
 
