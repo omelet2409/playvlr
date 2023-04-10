@@ -12,21 +12,25 @@
     <br>
     <hr>
     <br>
-    <div class=" gundetail">
-        <h1> // gun's detail </h1>
-                <h3> {{weapon.name}} </h3> 
-                <h4> {{weapon.type}} </h4>
-                <h1>// description </h1>
-                <p> {{weapon.description}} </p>
-        <img src ="{{weapon.img.url}}">
-    
-<br>
-    <p>{{weapon.dmg_h}} </p> 
-    <p>{{weapon.dmg_b}} </p>   
-    <p>{{weapon.dmg_l}} </p>
-    
+<div class="gundetail">
+    <div class="gundetail-img">
+        <h2> //NAME. {{weapon.name}} </h2>
+        <h3> //TYPE. {{weapon.type}} </h3> <br> <br> <hr>
+        <img src="{{weapon.img.url}}"/>
+    </div>
+    <div class="gundetail-description">
+        <h3> //DESCRIPTION </h3>
+        <h4> Credit cost: {{weapon.money}} </h4>
+        <h5> {{weapon.description}} </h5> <hr>
+        <h4> Damge on Head / Distance more than 20m: </h4>
+        <p> {{weapon.dmg_h}} // {{weapon.dmg_h_far}} </p>
+        <h4> Damge on Body /  Distance more than 20m:</h4>
+        <p> {{weapon.dmg_b}} // {{weapon.dmg_b_far}} </p>
+        <h4> Damge on Leg /  Distance more than 20m: </h4>
+        <p> {{weapon.dmg_l}} // {{weapon.dmg_l_far}} </p>
+    </div>
 </div>
-<br>
+    <br>
     <hr>
     <br>
 <!--endbody-->

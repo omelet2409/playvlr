@@ -9,9 +9,18 @@ class Weapon(models.Model):
     #Weapons
     name = models.CharField(max_length=50)
     type = models.CharField(max_length=500)
+    money = models.CharField(max_length= 10)
     dmg_h = models.CharField(max_length=500)
     dmg_b = models.CharField(max_length=500)
     dmg_l = models.CharField(max_length=500)
+    
+    #weapon - distance
+    
+    dmg_h_far = models.CharField(max_length=50)
+    dmg_b_far = models.CharField(max_length=50)
+    dmg_l_far = models.CharField(max_length=50)
+    
+    
     img = CloudinaryField('img')
     slug = models.SlugField()
     description = models.CharField(max_length=500)

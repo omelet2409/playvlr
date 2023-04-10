@@ -66,25 +66,35 @@
     transition: .5s ease;
 }
 /* gun detail */ 
-.gundetail{
-    display: block;
-    align-items: center;
-    text-align: leftt;
-    margin-left: 500px;
+.gundetail {
+    justify-content: center;
+    display: flex;
+    margin: 40px;
 }
-
-.gundetail h1{
-    text-transform: uppercase;
+.gundetail h2{
     font-family: valorant;
 }
-
+.gundetail h3{
+    font-family: valorant;
+}
+.gundetail h4{
+    font-family: valorant;
+    font-weight: bold;
+}
 .gundetail p{
-    color: #7e7e7e;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-right: 500px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+.gundetail-img {
+    max-width: 750px;
+    
+    margin-right: 100px;
 }
 
-.gundetail img:hover{
-    transform: scale(1.1);
-    transition: .1s ease-out;
+.gundetail .gundetail-description{
+    text-align: left;
+}
+.gundetail-description{
+    text-align: right;
+    max-width: 400px;
 }

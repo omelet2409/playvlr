@@ -186,10 +186,13 @@ footer span {
 p {
   line-height: 150%;
 }
-
+.newsintro h2{
+  padding-left: 100px;
+}
 .introLeft h2 {
   color: #383e3a;
   text-transform: uppercase;
+
 }
 
 .introLeft p {
