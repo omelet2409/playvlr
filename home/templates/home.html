@@ -1,31 +1,11 @@
-{% load static %}
+{% extends 'home_base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PLAY VALORANT</title>
-    <link rel="stylesheet" href="{% static 'css/normalize.css'%}" />
-    <link rel="stylesheet" href="{% static 'css/style1.css'%}" />
-    <link rel="stylesheet" href="{% static 'css/button.css'%}" />
-    <link rel="shortcut icon" type="image/png" href="{% static 'img/faviconicon.png'%}">
-  </head>
-  
-   
-    <nav>
-      <ul>
-        <li>
-          <a href="{% url 'home:home' %}"> <img src="{% static 'img/faviconicon.png' %}" alt="Intro Image"  height="30" width="30">  </a>
-          <a href="{% url 'home:agents' %}">Agents</a>
-          <a href="{% url 'home:maps' %}">Maps</a>
-          <a href="{% url 'home:weapons' %}">Arsenals</a>
-          <a href="{% url 'home:specs' %}">Specs</a>
-          <a href="{% url 'home:news' %}">News</a>
-          <a href="{% url 'home:premiers' %}">premiers</a>
-        </li>
-      </ul>
-    </nav>
+{% load static %}
+{% block title %}
+    VALORANT: A 5v5 character-based tactical shooter
+{% endblock title%}
+
+{% block content %}
   <body>  
 
     <header class="indexHeader">
@@ -130,28 +110,4 @@
     <!--enderintros-->
     
     <br>
-    <footer>
-      <div class="ender">
-          <p1>
-              <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" ></img></a>
-              <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png'%}" alt="Facebook" ></img></a>
-              <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png'%}" alt="YouTube" ></img></a>
-              <a href="https://discord.gg/qqqBa2rfAg" target="_blank"><img class="socialLink2" src="{% static 'img/discord.png'%}" alt="YouTube" ></img></a>
-              <a href="https://www.instagram.com/playvalorantofficial/?hl=en" target="_blank"><img class="socialLink2" src="{% static 'img/instagram.png'%}" alt="YouTube" ></img></a>
-              <br>
-              
-          </p1>
-      </div>
-      <div  class="enderlink">
-              <a href="https://www.riotgames.com/en" target="_blank"><img class="socialLink2" src="{% static 'img/riot.png'%}" alt="YouTube" ></img></a>
-              <a href="{% url 'home:home' %}" target="_blank"><img class="socialLink2" src="{% static 'img/logoonhome.png'%}" alt="YouTube" ></img></a>
-      </div>                
-              <p>
-                        &copy; 2023 Riot games, inc, riot games, <span>valorant</span>, and any
-                        associated logos are trademarks, service marks, and/or registered
-                        trademarks of riot games, inc.
-                      </p>
-                      <img src="{% static 'img/2.footer.png' %}"/>
-    </footer>
-  </body>
-</html>
+{% endblock %}

@@ -13,6 +13,6 @@ class NewsListView(ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["newss"] = News.objects.all() 
+        context["newss"] = News.objects.all().order_by('-datetime')
         return context
 

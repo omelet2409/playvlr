@@ -13,3 +13,4 @@ class HomeListView(ListView):
         context = super().get_context_data(**kwargs)
         context["homes"] = Home.objects.all() 
         return context
+

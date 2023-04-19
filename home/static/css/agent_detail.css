@@ -99,7 +99,11 @@
   }
 
   /* SPECIAL ABILITIES */
-
+.special h1{
+  margin-left: 200px;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .agent-abilities{
   display: grid;
   grid-template-columns: 180px 400px 500px;

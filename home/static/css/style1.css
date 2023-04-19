@@ -16,7 +16,8 @@ nav {
   position: relative;
   background-color: #111111;
   padding: 15px;
-  border-bottom: 2px solid #1a1a1a;
+  border-bottom: 5px solid #1a1a1a;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul {
@@ -35,7 +36,10 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 2px solid #ff4655;
+  border-bottom: 5px solid #ff4655;
+  transition: .3s ease-in-out;
+  background-color: rgb(58, 58, 58);
+  border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -274,6 +278,7 @@ p {
 }
 .introitem a{
   padding: 20px 0px 100px 400px;
+  text-decoration: none
 }
 .introitem video{
   text-align: center;
@@ -702,7 +707,7 @@ p {
   height: 30px;
   width: 30px;
   filter: grayscale(100);
-  padding: 0px 5px 10px 5px;
+  padding: 50px 5px 10px 5px;
 }
 .ender img:hover{
   filter: grayscale(0);
@@ -737,14 +742,19 @@ p {
 .introRight link{
   background-color: #0f192200;
 }
-
+.link img{
+  filter: brightness(1);
+  border: 4px solid rgba(255, 0, 0, 0);
+  padding: 2px;
+}
 .link img:hover {
-  filter: brightness(.6);
-  transform: scale(1.02);
-  transition: .2s ease-in-out;
+  filter: brightness(.5);
+  transition: .4s ease-in-out;
+  border: 4px solid rgb(255, 81, 0);
+  border-radius: 10px 10px 10px 10px;
 }
 .introRight:hover link {
-  transition: all .15s ease;
+  transition: all .15s ease-in-out;
 }
 
 /* tutorials part  */
@@ -760,16 +770,66 @@ p {
   height: auto;
 }
 
-.FAQ h3{
+.FAQheader{
+  color: #ece7e1;
+  height: 800px;
+  padding: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+  background-image: url(../img/FAQheader.jpg);
+}
+.FAQ {
+  justify-self: center;
+  max-width: 900px;
   margin-left: 500px;
-  margin-right: 500px;
+}
+.FAQ h3{
   text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .FAQ p{
-  margin-left: 500px;
-  margin-right: 500px;
+  text-align: left;
+  color:#1a1a1a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  color: #3b3b3b;
+}
+.FAQtitle h1{
+  font-size: 100px;
+  margin-left: 200px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+}
+.FAQtitle p{
   text-align: left;
   color:#1a1a1a;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 10px;
+  margin-left: 500px;
+  max-width: 900px;
+  color: #777777;
+  font-weight: bold;
 }
+.FAQtitle iframe{
+  display: flex;
+  justify-content: center;
+  height: 560px;
+  width: 1000px;
+  position: relative;
+  top: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+

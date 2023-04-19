@@ -122,6 +122,7 @@
   .btn__content {
     position: relative;
     font-family: Valorant;
+    text-decoration: none;
   }
   
   .btn:hover {
