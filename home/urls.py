@@ -28,6 +28,8 @@ from home.views.home_view import HomeListView
 from home.views.specs_view import SpecsListView
 from home.views.news_view import NewsListView
 from home.views.signups_view import SignupListView
+from home.views.premiers_view import PremierListView
+
 
 app_name = "home"
 
@@ -86,7 +88,12 @@ urlpatterns = [
         view = SignupListView.as_view(),
         name= 'signups',
     ),
-
+    path(
+        route= 'premiers/',
+        view = PremierListView.as_view(),
+        name= 'premiers',
+    ),
+    
     
 
 ]

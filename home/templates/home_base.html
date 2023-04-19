@@ -35,31 +35,28 @@
     <!--body-->
 {% endblock content %}
          <script src="{% static 'js/map.js'%}"></script> 
-        <footer>
-            <div class="ender">
-                <p1>
-                    <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" height="50" width="50"></img></a>
-                    <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png'%}" alt="Facebook" height="50" width="50"></img></a>
-                    <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png'%}" alt="YouTube" height="50" width="50"></img></a>
-                    <br>
-                    <div>
-                        <button class="btn">
-                          <span class="btn__inner">
-                            <span class="btn__slide"></span>
-                            <span class="btn__content">DOWNLOADS</span>
-                          </span>
-                        </button>
-                    </div>
-                </p1>
-            </div>
-            <img src="{% static 'img/1.footer.png' %}"/>
-            <p>
-              &copy; 2023 Riot games, inc, riot games, <span>valorant</span>, and any
-              associated logos are trademarks, service marks, and/or registered
-              trademarks of riot games, inc.
-            </p>
-            <img src="{% static 'img/2.footer.png' %}"/>
-                            
-          </footer>
-        </body>
-      </html>
+         <footer>
+          <div class="ender">
+              <p1>
+                  <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" ></img></a>
+                  <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png'%}" alt="Facebook" ></img></a>
+                  <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png'%}" alt="YouTube" ></img></a>
+                  <a href="https://discord.gg/qqqBa2rfAg" target="_blank"><img class="socialLink2" src="{% static 'img/discord.png'%}" alt="YouTube" ></img></a>
+                  <a href="https://www.instagram.com/playvalorantofficial/?hl=en" target="_blank"><img class="socialLink2" src="{% static 'img/instagram.png'%}" alt="YouTube" ></img></a>
+                  <br>
+                  
+              </p1>
+          </div>
+          <div  class="enderlink">
+                  <a href="https://www.riotgames.com/en" target="_blank"><img class="socialLink2" src="{% static 'img/riot.png'%}" alt="YouTube" ></img></a>
+                  <a href="{% url 'home:home' %}" target="_blank"><img class="socialLink2" src="{% static 'img/logoonhome.png'%}" alt="YouTube" ></img></a>
+          </div>                
+                  <p>
+                            &copy; 2023 Riot games, inc, riot games, <span>valorant</span>, and any
+                            associated logos are trademarks, service marks, and/or registered
+                            trademarks of riot games, inc.
+                          </p>
+                          <img src="{% static 'img/2.footer.png' %}"/>
+        </footer>
+      </body>
+    </html>

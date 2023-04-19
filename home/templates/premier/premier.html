@@ -1,0 +1,26 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    PREMIER
+{% endblock title%}
+
+{% block content %}
+
+<div class="FAQtitle">
+    <h1> PREMIER GLOBAL OPEN BETA FAQ </h1>
+    <p> Premier is VALORANT’s team-based competitive system, and the Premier Global Open Beta launches April 25. Watch the video below where we run through the basics so that you and your team are ready on day one. For any additional questions, please check out the FAQ below.</p>
+
+</div>
+{% for premier in premiers %}
+<div class="FAQ">
+<h3> // {{premier.question}} </h3>
+<p> {{premier.answer}} <p>
+</div>
+{% endfor %}
+<br>
+<br>
+<hr>
+<br>
+
+{% endblock content%}

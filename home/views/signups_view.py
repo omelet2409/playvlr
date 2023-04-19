@@ -5,7 +5,6 @@ from django.views.generic import ListView
 
 class SignupListView(ListView):
     context_object_name = "signups"
-    
     queryset = Signup.objects.all()
     template_name = 'signup/signup.html'
     
