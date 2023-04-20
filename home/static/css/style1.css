@@ -708,6 +708,10 @@ p {
 .ender {
   text-align: center;
 }
+.ender h5{
+  color: white;
+  text-transform: uppercase;
+}
 .enderlink img{
   padding: 30px 100px 20px 50px;
   height: 70px;
@@ -724,7 +728,7 @@ p {
   height: 30px;
   width: 30px;
   filter: grayscale(100);
-  padding: 50px 5px 10px 5px;
+  padding: 0px 5px 10px 5px;
 }
 .ender img:hover{
   filter: grayscale(0);
