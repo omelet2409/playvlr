@@ -20,16 +20,16 @@
       <ul>
         <li>
           <a href="{% url 'home:home' %}"> <img src="{% static 'img/faviconicon.png' %}" alt="Intro Image"  height="30" width="30">  </a>
-          <a href="{% url 'home:agents' %}">Agents</a>
-          <a href="{% url 'home:maps' %}">Maps</a>
-          <a href="{% url 'home:weapons' %}">Arsenals</a>
-          <a href="{% url 'home:specs' %}">Specs</a>
-          <a href="{% url 'home:news' %}">News</a>
+          <a href="{% url 'home:agents' %}">agents</a>
+          <a href="{% url 'home:maps' %}">maps</a>
+          <a href="{% url 'home:weapons' %}">arsenals</a>
+          <a href="{% url 'home:specs' %}">specs</a>
+          <a href="{% url 'home:news' %}">news</a>
           <a href="{% url 'home:premiers' %}">premiers</a>
           <a href="{% url 'home:signups' %}">tutorial</a>
           <a href="https://valorantesports.com/schedule">esport</a>
-          
-        </li>
+          <a href="#bottom"> our social </a>
+          </li>
       </ul>
     </nav>
         
@@ -37,7 +37,7 @@
     <!--body-->
 {% endblock content %}
          <script src="{% static 'js/map.js'%}"></script> 
-         <footer>
+         <footer id="bottom">
           <div class="ender">
               <p1>
                   <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" ></img></a>
@@ -60,8 +60,15 @@
                           </p>
                           <img src="{% static 'img/2.footer.png' %}"/>
                           <br>
+                          
                       <br>
-                      <br>
+                      <br><div class="updraft">
+                            <a href="#top">
+                              <img src="{% static 'img/up.png' %}"/>
+                            </a>
+                            <p> PRESS HERE TO GO ON TOP </p>
+                          </div>
+                          
                       <br>
                       <br>
                       <br>

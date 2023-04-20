@@ -8,6 +8,9 @@ body {
   background-blend-mode: soft-light;
   background-size:cover;
   cursor: default;
+  scroll-behavior: smooth;
+  transition: 0.8s ease-in-out;
+  
 }
 
 /*-----------------------  Navigation  -----------------------*/
@@ -63,6 +66,15 @@ footer span {
   display: flex;
   flex-flow: row;
   padding-bottom: 100px;
+}
+.updraft img {
+  height: 50px;
+  width: auto;
+}
+
+.updraft img:hover {
+  transform: scale(1.4);
+  transition: .2s ease-in-out;
 }
 /*-----------------------  IndexHeader  -----------------------*/
 
@@ -197,11 +209,13 @@ p {
   line-height: 150%;
 }
 .newsintro h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding-left: 100px;
 }
 .introLeft h2 {
-  color: #383e3a;
+  color: #3e3838;
   text-transform: uppercase;
+  
 
 }
 
@@ -243,7 +257,10 @@ p {
   grid-template-columns: repeat(2, auto);
   border: 0px solid black;
   background-color: #ff4a4a;
+  
 }
+
+
 
 .introitem{
   border: 0px solid red;
@@ -810,6 +827,10 @@ p {
   margin-left: 200px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: lighter;
+}
+.FAQtitle h2{
+  display: flex;
+  justify-content: center;
 }
 .FAQtitle p{
   text-align: left;

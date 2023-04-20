@@ -121,7 +121,7 @@
 
 
 .agent-abilities video{
-  opacity: 1;
+  opacity: .8;
   border-radius: 0px 0px 0px 0px;
 }
 .agent-abilities p{
