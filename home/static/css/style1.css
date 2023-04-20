@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: RixSGo,Tahoma,sans-serif;
   background-color: antiquewhite;
@@ -9,8 +13,11 @@ body {
   background-size:cover;
   cursor: default;
   scroll-behavior: smooth;
-  transition: 0.8s ease-in-out;
+  transition: 1s ease-in-out;
   
+}
+body.dark {
+  background-color: #333;
 }
 
 /*-----------------------  Navigation  -----------------------*/
