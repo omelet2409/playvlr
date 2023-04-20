@@ -19,11 +19,12 @@
     <h2> PREMIER GLOBAL OPEN BETA FAQ </h2>
 </div>
 <hr>
+
 {% for premier in premiers %}
-<div class="FAQ">
-<h3>{{premier.question}} </h3>
-<p> ./ {{premier.answer}} <p>
-</div>
+    <div class="FAQ">
+        <h3>{{premier.question}} </h3>
+        <p> ./ {{premier.answer}} <p>
+    </div>
 {% endfor %}
 <br>
 <br>
