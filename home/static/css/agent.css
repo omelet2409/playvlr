@@ -12,7 +12,7 @@
     margin: auto;
 }
 .agents-container{
-    padding: 10px;
+    padding: 0px;
 }
 .agents-container img{
     filter: grayscale(80%);

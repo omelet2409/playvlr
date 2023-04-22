@@ -16,14 +16,31 @@ body {
   transition: 5s ease-in-out;
   
 }
-body.dark {
-  background-color: #333;
-}
+
 
 /*-----------------------  Navigation  -----------------------*/
+.upper img {
+  position: fixed;
+  height: auto;
+  width: 80px;
+  right: 20px;
+  bottom: 20px;
+  filter: brightness(50%);
+  object-fit: cover;
+  z-index: 9999;
+}
+.upper img:hover{
+  transition: .5s ease-in-out;
+  filter: brightness(100);
+  background-color: red;
+  border-radius: 50px 50px 50px 50px;
+}
 
 nav {
-  position: relative;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  margin: auto;
   background-color: #111111;
   padding: 15px;
   border-bottom: 5px solid #1a1a1a;
@@ -100,7 +117,6 @@ footer span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   margin-bottom: 5px;
   background-image: url(../img/bg-img.gif);
 }
@@ -215,10 +231,7 @@ footer span {
 p {
   line-height: 150%;
 }
-.newsintro h2{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding-left: 100px;
-}
+
 .introLeft h2 {
   color: #3e3838;
   text-transform: uppercase;

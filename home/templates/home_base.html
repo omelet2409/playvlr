@@ -16,24 +16,30 @@
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dtbkn91rt/image/upload/v1680739254/faviconicon_ycc0ow.png">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="{% url 'home:home' %}"> <img src="{% static 'img/faviconicon.png' %}" alt="Intro Image"  height="30" width="30">  </a>
-          <a href="{% url 'home:agents' %}">agents</a>
-          <a href="{% url 'home:maps' %}">maps</a>
-          <a href="{% url 'home:weapons' %}">arsenals</a>
-          <a href="{% url 'home:specs' %}">specs</a>
-          <a href="{% url 'home:news' %}">news</a>
-          <a href="{% url 'home:premiers' %}">premiers</a>
-          <a href="{% url 'home:signups' %}">tutorial</a>
-          <a href="https://valorantesports.com/schedule">esport</a>
-          <a href="#bottom"> our social </a>
-          </li>
-      </ul>
-    </nav>
-        
-{% block content %}
+    <div class="wrapper">
+      <header>
+          <nav>
+            <ul>
+              <li>
+                <a href="{% url 'home:home' %}"> <img src="{% static 'img/faviconicon.png' %}" alt="Intro Image"  height="30" width="30">  </a>
+                <a href="{% url 'home:agents' %}">agents</a>
+                <a href="{% url 'home:maps' %}">maps</a>
+                <a href="{% url 'home:weapons' %}">arsenals</a>
+                <a href="{% url 'home:specs' %}">specs</a>
+                <a href="{% url 'home:news' %}">news</a>
+                <a href="{% url 'home:premiers' %}">premiers</a>
+                <a href="{% url 'home:signups' %}">tutorial</a>
+                <a href="https://valorantesports.com/schedule">esport</a>
+                <a href="#bottom"> our social </a>
+                </li>
+            </ul>
+          </nav>
+      </header>
+    </div>
+    <div class="upper">
+      <a href="#top"><img src="{% static 'img/up.png' %}"/></a>
+    </div>
+{% block content %} 
     <!--body-->
 {% endblock content %}
          <script src="{% static 'js/map.js'%}"></script> 
