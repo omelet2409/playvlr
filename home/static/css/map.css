@@ -120,8 +120,13 @@ body{
     object-fit: cover;
     object-position: center ;
     position: relative;
+    filter: brightness(100%);
 }
-
+.list-image img:hover{
+    transform: scale(.95);
+    filter: brightness(70%);
+    transition: .2s ease-in-out;
+}
 
 
 

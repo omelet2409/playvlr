@@ -6,69 +6,76 @@
 {% endblock title %}
 
 {% block content %}
-<!--body-->
-<header>
-    
-    <div class="sova-img-container">
-        <h2> {{agent.role}} </h2>
-      <img src="{{agent.img.url}}" alt="sova-img" class="sova-img" />
-      
-      <p>// BIOGRAPHY <br><br> {{agent.bio}}  <BR> <BR>// COUNTRY: "{{agent.country}}"</p>
-      <hr>
-    </div>
-    <div class="header-text-container">
-      <img src ="{% static 'img/agent-background-generic.gif' %}" />
-      <div class="desc-container">
-        <p> AGENT #{{agent.number}}</p>
-        <h2> <img src="{{agent.role_icon.url}}" alt="" />// {{agent.name}}</h2>
-        
-      </div>
-    </div>
-  </header>
-  <!-- END OF HEADER -->
-  <div class = "special">
-      <h1> SPECIAL ABILITIES </h1>  
+<div class="agentdetail-body">
+              <!--body-->
+              <div class="agentdetailheader">
+                      <div class="agentdetailbg">
+                        <img src ="https://res.cloudinary.com/dtbkn91rt/image/upload/v1682193321/agent-background-generic_izcuai.gif"/>
+                      </div>
+                      <div class="agentdetailcontent">
+                      <div class="agentdetailleft">
+                        <img src="{{agent.img.url}}"/>
+                      </div>
 
-  </div>
-  <!-- SKILL -->
-  <div class="agent-abilities">
-    <!-- ability q -->
-    <img src="{{agent.skill_q_icon.url}}"> 
-            <p> {{agent.skill_q_name}} <br> <br>{{agent.skill_q_description}} </p> 
-            <video autoplay muted loop width="100%" controls="" src="{{agent.skill_q_video.url}}" type="video/mp4"> </video>
-    </img>
+                      <div class="agentdetailright">
+                          <h5> AGENT #{{agent.number}} </h5>
+                            <h1> {{agent.name}} </h1>
+                          <h4> //ROLE  </h4>
+                          <div class="role">
+                            <h2> {{agent.role}}</h2>
+                            <img src="{{agent.role_icon.url}}">
+                          </div>
+                          <h4> //BIOGRAPHY  </h4>
+                              <p> {{agent.bio}} </p>
+                          <h4> //COUNTRY </h4>
+                        <p> {{agent.country}} </p>
+                      </div>
+                    </div>
+                  
+              </div>
+                <!-- END OF HEADER -->
+              <div class="agentdetailskill">
+                    <div class="skillintro">
+                          <h1> SPECIAL ABILITIES </h1>  
+                    </div>
+              
+                <!-- SKILL-->
+                  <div class="skillcontent">
+                        <div class="agent-abilities">
+                                  <!-- ability q -->
+                                  <img src="{{agent.skill_q_icon.url}}"> 
+                                          <p> {{agent.skill_q_name}} <br> <br>{{agent.skill_q_description}} </p> 
+                                          <video autoplay muted loop width="100%" controls="">
+                                            <source src="{{agent.skill_q_video.url}}" type="video/mp4"> </video>
+                                  </img>
+                                  <!-- ability e -->
+                                  <img src="{{agent.skill_e_icon.url}}"> 
+                                        <p> {{agent.skill_e_name}} <br> <br> {{agent.skill_e_description}} </p> 
+                                          <video autoplay muted loop width="100%" controls="">
+                                            <source src="{{agent.skill_e_video.url}}" type="video/mp4"> </video>
+                                  </img>
+                                  <!-- ability c -->
+                                  <img src="{{agent.skill_c_icon.url}}"> 
+                                      <p> {{agent.skill_c_name}} <br> <br> {{agent.skill_c_description}} </p> 
+                                          <video autoplay muted loop width="100%" controls="">
+                                            <source src="{{agent.skill_c_video.url}}" type="video/mp4"></video>
+                                  </img>
+                                  <!-- ability x -->
+                                  <img src="{{agent.skill_x_icon.url}}"> 
+                                      <p> {{agent.skill_x_name}} <br> <br> {{agent.skill_x_description}} </p> 
+                                          <video autoplay muted loop width="100%" controls="">
+                                            <source src="{{agent.skill_x_video.url}}" type="video/mp4"></video>
+                                  </img>
+                        </div>
+                      
+                  </div>
+              </div>
+                <br /><br /><br /><br /><br />
+                <!-- END OF SKILL -->
 
-    <!-- ability e -->
-    <img src="{{agent.skill_e_icon.url}}"> 
-          <p> {{agent.skill_e_name}} <br> <br> {{agent.skill_e_description}} </p> 
-            <video autoplay muted loop width="100%" controls="">
-              <source src="{{agent.skill_e_video.url}}" type="video/mp4"> </video>
-    </img>
-    
-    <!-- ability c -->
-    <img src="{{agent.skill_c_icon.url}}"> 
-        <p> {{agent.skill_c_name}} <br> <br> {{agent.skill_c_description}} </p> 
-            <video autoplay muted loop width="100%" controls="">
-              <source src="{{agent.skill_c_video.url}}" type="video/mp4"></video>
-    </img>
-    <!--111-->
-    <!-- ability x -->
-    <img src="{{agent.skill_x_icon.url}}"> 
-        <p> {{agent.skill_x_name}} <br> <br> {{agent.skill_x_description}} </p> 
-            <video autoplay muted loop width="100%" controls="">
-              <source src="{{agent.skill_x_video.url}}" type="video/mp4"></video>
-    </img>
-  </div>
-
-  <br /><br /><br /><br /><br />
-  <!-- END OF SKILL -->
-
-  <!-- OTHER AGENTS -->
-  
-<!--skill-->
+                <!-- OTHER AGENTS -->
+                
+</div>
 
 
-<br>
-<hr>
-<br>
 {% endblock content %}

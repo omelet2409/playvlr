@@ -1,106 +1,110 @@
-#myVideo {
-    z-index: -2;
-  }
-  
-  .sova-img-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    top: 10%;
-  }
-  .sova-img-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 15%;
-  }
-  .sova-img-container p{
-    justify-content: right;
-    font-size: 25px;
-    color: white;
-    padding-top: 10%;
-    padding-right: 100px;
-    margin-left: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .sova-img-container h2{
-    text-shadow: -3px 0 #ff4655, 0 3px #ff4655,      3px 0 #ff4655, 0 -3px #ff4655;
-    
-    font-size: 100px;
-    margin-left: 200px;
-    transform: rotate(-90deg);
-    padding-top: 200px;
-    padding-left: 20px;
-    font-family: valorant;
-    color: antiquewhite;
-  }
-  .sova-img-container h3{
-    color: antiquewhite;
-  }
-  .header-text-container h1 {
-    font-size: 20rem;
-  }
-  
-  .header-text-container h2 {
-    margin:0;
-    font-family: valorant;
-  }
-  
-  .header-text-container .desc-container {
-    width: 30%;
-  }
-  
-  .header-text-container img {
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    
-  }
-  
-  .header-text-container p {
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: justify;
-  }
-  .header-text-container {
-    font-size: 3rem;
-    padding: 0;
-    color: #0f1923;
-    transition: all ease-in-out 0.2s;
-  }
 
-  .header-text-container .desc-container {
-    width: 100%;
-    padding: 0;
-  }
-  .desc-container p{
-    font-family: valorant;
-    padding-left: 100px;
-    color: red;
-  }
+/* agent */
+.agentdetail-body {
+  margin: 50px 0px 0px 0px;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.agentdetailheader{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 1500px;
+}
+.agentdetailskill{
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.agentdetailbg{
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.agentdetailbg img{
+  background-repeat: repeat;
+  height: auto;
+  width: 100%;
+  z-index: -5;
+  object-fit: cover;
+}
+.agentdetailcontent{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.agentdetailleft img{
+  padding-top: 10px;
+  height: auto;
+  width: 80%;
+}
 
-  .header-text-container h1 {
-    text-align: center;
-    font-size: 15vw;
-    font-weight: 900;
-  }
+.agentdetailright h1{
+  font-family: valorant;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+.agentdetailright h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.agentdetailright h3{
+  margin: 0;
+  padding: 0;
+}
+.agentdetailright .role{
+  display: flex;
+  justify-content: left;
+}
+.agentdetailright .role img{
+  height: 70%;
+  width: 10%;
+  padding-left: 10px;
+}
+.agentdetailright h4{
+  margin: 15px 0px 0px 0px;
+  padding: 0;
+}
+.agentdetailright h5{
+  margin: 50px 0px 0px 0px;
+  padding: 0;
+}
+.agentdetailright p{
+  width: 400px;
+}
+.agentdetailright {
+  color: white;
+  display: flex;
+  justify-content: left;
+  flex-flow: column;
+  padding-right: 200px;
+}
 
-  .header-text-container h2 {
-    color: #fff;
-    font-size: 6vw;
-    background-color: #ff4655;
-    padding-left: 6px;
-  }
 
-  .header-text-container h2 img {
-    width: 5vw;
-    padding-top: 40px;
-  }
-
+  
   /* SPECIAL ABILITIES */
-.special h1{
-  margin-left: 200px;
+
+.skillcontent{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.skillintro h1{
   font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -122,7 +126,6 @@
 
 .agent-abilities video{
   opacity: .8;
-  border-radius: 0px 0px 0px 0px;
 }
 .agent-abilities p{
   opacity: .7;
