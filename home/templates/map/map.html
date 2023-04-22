@@ -6,28 +6,30 @@
 {% endblock title %}
 
 {% block content %}
-<main class="agentsMainColumn">
-  <div class="agentsMainText">
-    <h2>// MAPS </h2>
-    <p>
-      This is the place where you and your teamates, also the enemies will try to win the round, win the match and bring back the victory for each team 
-    </p>
-  </div>
+<div class="content-body">
+      <main class="agentsMainColumn">
+        <div class="agentsMainText">
+          <h2>// MAPS </h2>
+          <p>
+            This is the place where you and your teamates, also the enemies will try to win the round, win the match and bring back the victory for each team 
+          </p>
+        </div>
 
 
-  <div class="mapcontainer">
+        <div class="mapcontainer">
 
-    {% for map in maps %}
-      <div class="mapitem"> 
-        <p>{{map.name}}</p>
-          <a href="{{map.get_absolute_url}}">
-              <img src="{{map.img.url}}">
-          </a>
+          {% for map in maps %}
+            <div class="mapitem"> 
+              <p>{{map.name}}</p>
+                <a href="{{map.get_absolute_url}}">
+                    <img src="{{map.img.url}}">
+                </a>
+            </div>
+          {% endfor %}
       </div>
-    {% endfor %}
+      </div>
+      <br>
+      <hr>
+      <br>
 </div>
-</div>
-<br>
-<hr>
-<br>
 {% endblock content %}

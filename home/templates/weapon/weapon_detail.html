@@ -8,30 +8,28 @@
 {% block content %}
 
 <!--body-->
-
-    <br>
-    <hr>
-    <br>
-<div class="gundetail">
-    <div class="gundetail-img">
-        <h2> //NAME. {{weapon.name}} </h2>
-        <h3> //TYPE. {{weapon.type}} </h3> <br> <br> <hr>
-        <img src="{{weapon.img.url}}"/>
-    </div>
-    <div class="gundetail-description">
-        <h3> //DESCRIPTION </h3>
-        <h4> Credit cost: {{weapon.money}} </h4>
-        <h5> {{weapon.description}} </h5> <hr>
-        <h4> Damge on Head / Distance more than 20m: </h4>
-        <p> {{weapon.dmg_h}} // {{weapon.dmg_h_far}} </p>
-        <h4> Damge on Body /  Distance more than 20m:</h4>
-        <p> {{weapon.dmg_b}} // {{weapon.dmg_b_far}} </p>
-        <h4> Damge on Leg /  Distance more than 20m: </h4>
-        <p> {{weapon.dmg_l}} // {{weapon.dmg_l_far}} </p>
-    </div>
+<div class="content-body">
+        <div class="gundetail">
+            <div class="gundetail-img">
+                <h2> //NAME. {{weapon.name}} </h2>
+                <h3> //TYPE. {{weapon.type}} </h3> <br> <br> <hr>
+                <img src="{{weapon.img.url}}"/>
+            </div>
+            <div class="gundetail-description">
+                <h3> //DESCRIPTION </h3>
+                <h4> Credit cost: {{weapon.money}} </h4>
+                <h5> {{weapon.description}} </h5> <hr>
+                <h4> Damge on Head / Distance more than 20m: </h4>
+                <p> {{weapon.dmg_h}} // {{weapon.dmg_h_far}} </p>
+                <h4> Damge on Body /  Distance more than 20m:</h4>
+                <p> {{weapon.dmg_b}} // {{weapon.dmg_b_far}} </p>
+                <h4> Damge on Leg /  Distance more than 20m: </h4>
+                <p> {{weapon.dmg_l}} // {{weapon.dmg_l_far}} </p>
+            </div>
+        </div>
+            <br>
+            <hr>
+            <br>
 </div>
-    <br>
-    <hr>
-    <br>
 <!--endbody-->
 {% endblock content %}

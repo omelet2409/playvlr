@@ -7,12 +7,7 @@ class Signup(models.Model):
     
     #tutorials
     img1 = CloudinaryField('img')
-    img2 = CloudinaryField('img')
-    img3 = CloudinaryField('img')
-    img4 = CloudinaryField('img')
-    img5 = CloudinaryField('img')
-    img6 = CloudinaryField('img')
-    img7 = CloudinaryField('img')
+    description = models.CharField(max_length=1000)
 
 
     class Meta:

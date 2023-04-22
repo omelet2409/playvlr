@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/agent_detail.css'%}" />
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dtbkn91rt/image/upload/v1680739254/faviconicon_ycc0ow.png">
   </head>
-  <body>
+  <header>
     <div class="wrapper">
       <header>
           <nav>
@@ -39,7 +39,10 @@
     <div class="upper">
       <a href="#top"><img src="{% static 'img/up.png' %}"/></a>
     </div>
+  </header>
+<body> 
 {% block content %} 
+
     <!--body-->
 {% endblock content %}
          <script src="{% static 'js/map.js'%}"></script> 
