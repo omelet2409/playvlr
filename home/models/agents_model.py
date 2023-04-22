@@ -17,7 +17,7 @@ class Agent(models.Model):
     img = CloudinaryField('img')
     avatar_icon = CloudinaryField('img')
     slug = models.SlugField()
-    
+    #
     #skill q
     skill_q_name = models.CharField( max_length=100)
     skill_q_icon = CloudinaryField('icon', transformation=[{'width' : 180, 'height' : 180,'crop' : 'fill'}])
