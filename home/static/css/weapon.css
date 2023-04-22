@@ -1,70 +1,93 @@
-.container{
-    display: grid;
-    grid-template-columns: 800px 800px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    grid-gap: 25px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-    .description-container{
-    display: grid;
-    grid-template-columns: 600px ;
-    justify-content: center;
-    align-items: center;
-}
-.item{
-    position: relative;
-    border: 0px solid black;
-    text-align: center;
-    font-weight: bold;
-}
-.item img{
-    filter: drop-shadow(1em 1em 0.05em #7e7e7e);
-}
-.description-item{
-    border: 0px solid black;
-}
-    
-    
-.overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .3s ease ;
-    opacity: 0;
-    text-align: left;
-}
-.item .text{
-    color: white;
-    font-size: 20px ;
-    position: absolute;
-    font-weight: lighter;
-    font-family:'Courier New', Courier, monospace;
-    opacity: 0;
-    
-} 
+.arsenal-body{
+    margin-top: 100px;
+    padding: 0;
 
-.item:hover .text{
-    color: white;
-    font-size: 20px ;
+}
+.arsenal-all{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px;
+}
+.arsenal{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+}
+.arsenal-content {
+    padding: 5px;
+    width: 500px;
+}
+.arsenal-content a{
+    text-decoration: none;
+}
+.arsenal-content-item {
+    border: 1px solid black;
+}
+.arsenal-content-item:hover{
+    transition: .3s ease;
+    background-color: rgb(255, 0, 0);
+}
+.arsenal-content-item-text p{
+    z-index: 1;
     position: absolute;
+    color: black;
+    width: 350px;
+    text-align: left;
+    padding-left:0;
+    opacity:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
-    font-family:'Courier New', Courier, monospace;
-    opacity: 1;
 }
-        
-    
-.item:hover img{
+.arsenal-content-item-text h3{
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    font-family: valorant;
+}
+
+.arsenal-content-item-img img{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.arsenal-content-item:hover img { 
     transform: scale(.95);
-    transition: .5s ease;
+    opacity: .5;
+    color: black;
+    transition: .2s ease-in-out;
 }
+.arsenal-content-item:hover p{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: .2s ease-in-out;
+    padding-left: 80px;
+}
+.arsenal-content-item:hover h3{
+    transition: .2s ease-in-out;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    text-align: left;
+    padding-left: 160px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* gun detail */ 
 .gundetail {
     justify-content: center;

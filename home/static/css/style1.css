@@ -45,7 +45,7 @@ nav {
   width: 100%;
   margin: auto;
   background-color: #111111;
-  padding: 15px;
+  padding: 5px;
   border-bottom: 5px solid #1a1a1a;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   top: 0px;
@@ -59,7 +59,7 @@ nav ul {
 }
 
 nav a {
-  padding: 20px;
+  padding: 15px 15px 10px 15px;
   text-transform: uppercase;
   color: #ece7e1;
   text-decoration: none;
@@ -69,7 +69,6 @@ nav a {
 nav a:hover {
   border-bottom: 5px solid #ff4655;
   transition: .3s ease-in-out;
-  background-color: rgb(58, 58, 58);
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -107,45 +106,43 @@ footer span {
 /*-----------------------  IndexHeader  -----------------------*/
 
 .indexHeader {
-  color: #ece7e1;
+  color: #ffffff;
   height: 800px;
   padding: 1px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
   position: relative;
-  margin-bottom: 5px;
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 5px;
-  background-image: url(../img/bg-img.gif);
 }
-
+.videoheader video{
+  position: absolute;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  object-fit: cover;
+  z-index: -1;
+}
+@media (max-width: 100%) {
+  body{
+    background-size: cover;
+  }
+  
+}
 
 .indexHeader h1{
   font-family: Valorant;
-}
-.indexHeaderRole {
-  color: #ece7e1;
-  height: 800px;
-  padding: 5px;
-  background-image: url(../img/bg-img.gif);
-  background-position: 50% 85%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 5px;
-}
+  font-weight: lighter;
+} 
+
 .indexHeaderRole p{
   color: #383e3a;
 }
@@ -264,12 +261,13 @@ p {
 
 /*-----------------------  insex-intro-page  -----------------------*/
 .indexIntroContainer{
+  width: 100%;
+  margin-top: 0px;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 4px;
   justify-content: center;
   position: relative;
-  
 }
 .indexIntroContaineriner{
   display: grid;
@@ -281,7 +279,6 @@ p {
   grid-template-columns: repeat(2, auto);
   border: 0px solid black;
   background-color: #ff4a4a;
-  
 }
 
 
@@ -476,8 +473,13 @@ p {
   font-family: Valorant;
 }
 
+.specs-body {
+  margin: 0;
+  padding: 0;
+}
 .hardwareIntro {
-  margin-left: 430px;
+  margin: 0 auto;
+  padding: 0;
   width: 60%;
 }
 
@@ -832,6 +834,8 @@ p {
   margin-bottom: 5px;
   background-image: url(../img/FAQheader.jpg);
 }
+
+
 .FAQ {
   position: relative;
   display: column;
@@ -888,10 +892,45 @@ p {
   max-width: 100%;
   margin: auto;
 }
+
 /*-- news --*/
+.news-header video{
+  position: absolute;
+  align-items: center;
+  object-position: top;
+  height: 400px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  object-fit: cover;
+  z-index: -1;
+
+}
+.news-intro{
+  position: relative;
+}
+.news-intro h2{
+  text-shadow: -1px 0 white, 0 1px rgb(255, 255, 255),      1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+  padding-top: 100px;
+  font-size: 70px; 
+  padding-left: 100px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+.news-intro p{
+  color: rgb(17, 11, 11);
+  text-shadow: -1px 0 white, 0 1px rgb(255, 255, 255),      1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+  padding-left: 100px; 
+  font-size: 30px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-bottom: 100px;
+}
+
 .newsbody {
+  position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 0px;
   padding: 50px;
 }
 
@@ -900,8 +939,12 @@ p {
 }
 
 .newsbody:hover {
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   filter: brightness(50%);
+}
+.newsbody:hover img{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
 }
 
 .newsdes{
@@ -919,10 +962,12 @@ p {
 .newsdes p{
   color: #383838;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .newsdes i{
   color: #777777;
+  padding-left: 50px;
 }
 
 .newsimg{
@@ -934,11 +979,136 @@ p {
   width: 500px;
   padding-left: 20px;
 }
+/*home*/
+.home-content-body{
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 1300px;
+}
+.home-cb1 {
+  display: flex;
+  justify-content: space-between;
+}
+.home-cb1-text {
+  padding-left: 50px;
+  width: 400px;
+}
+.home-cb1-text h1{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.home-cb1-text h3{
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 20px;
+}
+.home-cb1-text p {
+  padding-left: 40px;
+  color: #3a3a3a;
+}
+.home-cb1 button{
+  margin-left: 100px;
+}
+.home-cb2 button{
+  margin-left: 100px;
+}
+.home-cb3 button{
+  margin-left: 100px;
+}
+
+.home-cb1-img img{
+  padding-right: 100px;
+  text-align: right;
+}
+
+
+.home-cb2 {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.home-cb2-text h1{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.home-cb2-text h3{
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 20px;
+}
+.home-cb2-text p {
+  padding-left: 40px;
+  color: #ffffff;
+}
+.home-cb2-text {
+  padding-right: 100px;
+  color: white;
+  text-align: left;
+  width: 400px;
+}
+.home-cb2-img img{
+  height: auto;
+  width: 120%;
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+.home-cb3 {
+  display: flex;
+  justify-content: space-between;
+}
+.home-cb3-text{
+  padding-top: 200px;
+  padding-left: 50px;
+  z-index: 1;
+  width: 400px;
+  position: absolute;
+}
+.home-cb3-text h1{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.home-cb3-text h3{
+  text-transform: uppercase;
+  font-style: italic;
+  padding-left: 20px;
+}
+.home-cb3-text p {
+  padding-left: 40px;
+  color: #3a3a3a;
+}
+.home-cb3-img img{
+  align-items: right;
+  position: relative;
+  justify-content: right;
+  padding-left: 40px;
+}
+
 /*body margin*/
 .content-body{
+  width: 100%;
   margin-top: 100px;
+}
+.home-body{
+  margin-top: 50px;
   padding: 0;
 }
+.news-body {
+  margin-top: 75px;
+  padding: 0px 50px 50px 0px;
+}
+
+
 
 .tutorials-content-header h1{
   text-align: center;

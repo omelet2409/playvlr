@@ -14,22 +14,25 @@
             This is the place where you and your teamates, also the enemies will try to win the round, win the match and bring back the victory for each team 
           </p>
         </div>
+      </main>
 
-
-        <div class="mapcontainer">
-
-          {% for map in maps %}
-            <div class="mapitem"> 
-              <p>{{map.name}}</p>
-                <a href="{{map.get_absolute_url}}">
-                    <img src="{{map.img.url}}">
-                </a>
-            </div>
-          {% endfor %}
-      </div>
-      </div>
+                <div class="map">
+                    <div class="mapcontainer">
+                      {% for map in maps %}
+                      <a href="{{map.get_absolute_url}}">
+                        <div class="mapitem"> 
+                          <p>{{map.name}}</p>
+                           
+                                <img src="{{map.img.url}}">
+                            
+                        </div>
+                      </a>
+                      {% endfor %}
+                    </div>
+                </div>
+</div>
       <br>
       <hr>
       <br>
-</div>
+
 {% endblock content %}

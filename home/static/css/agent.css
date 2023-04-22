@@ -6,7 +6,7 @@
     display: grid;
     text-align: center;
     justify-content: center;
-    grid-template-columns: repeat(9, 200px);
+    grid-template-columns: repeat(6, 200px);
     height: auto;
     width: 40%;
     margin: auto;

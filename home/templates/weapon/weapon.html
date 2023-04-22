@@ -6,7 +6,7 @@
 {% endblock title %}
 
 {% block content %}
-<div class="content-body">
+<div class="arsenal-body">
         <main class="agentsMainColumn">
           <div class="agentsMainText">
             <h2>//  CHOOSE YOUR WEAPON </h2>
@@ -14,27 +14,33 @@
               Grap your weapon, prepare your spirits for the bloody gun fight, take out your enemies and Victory will be yours.
             </p>
           </div>
+        </main>
     <!--body-->
-    
-        <div class="container">
+    <div class="arsenal-all">
+          <div class="arsenal">
 
             {% for weapon in weapons %}
-            <div class="item">
-              <a href="{{weapon.get_absolute_url}}">
-              <button class="btn">
-                <span class="btn__inner"><img src ="{{weapon.img.url}}">
-                  <span class="btn__slide">//NAME. {{weapon.name}}</span>
-                  <span class="btn__content">
-                    //TYPE. {{weapon.type}}
-                  </span>
-                  <span class = "text">
-                    
-                  </span>
-                </span>
-              </button></a>
-            </div>
+            
+                  <div class="arsenal-content">
+                    <a href="{{weapon.get_absolute_url}}">
+
+                      <div class="arsenal-content-item">
+                        <div class="arsenal-content-item-text">
+                            <h3> NAME // {{weapon.name}} </h3>
+                            <p> {{weapon.description}} </p>
+                        </div>
+                        
+                        <div class="arsenal-content-item-img">
+                            <img src="{{weapon.img.url}}"/>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            
+          
             {% endfor %}
-        </div>
+          </div>  
+  </div>  
 
 </div>
     <!--endbody-->

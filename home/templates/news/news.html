@@ -6,35 +6,45 @@
 {% endblock title%}
 
 {% block content %}
-<div class="content-body">
-  <div class"newsintro">
-    <h2 style="font-size: 70px; padding-left: 200px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; "> // LATEST NEWS </h2>
-    <p style="color: #8f8c8c; padding-left: 200px; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Update the latest news of Valorant and Riot Games </p>
-  </div>
 
-    {% for news in newss %}
-    <a href="{{news.link}}">    
-        <div class="newsbody">
-          
-            <div class="newsdes">
-                <h2> {{news.name}} </h2>
-                <p> {{news.description}} </p>
-                <hr>
-                <i> {{news.datetime}} </i>
-            </div>
-
-            <!--anh-->
-
-            <a href="{{news.link}}">
-                <div class="newsimg">
-                  <img src="{{news.img.url}}">
-                </div>
-            </div>
-    </a>
+  <div class="news-header">
+    <div class="videoheader">
+      <video autoplay muted loop>
+          <source src="https://res.cloudinary.com/dtbkn91rt/video/upload/v1682169325/VALORANT-_Riot_Games_competitive_5v5_character-based_tactical_shooter_3_jx9cwe.mp4"></source>
+      </video>
     
-</div>
-    {% endfor %}  
+      <div class="news-intro">
+          <h2> // LATEST NEWS </h2>
+          <p> Update the latest news of Valorant and Riot Games </p>
+      </div>
+    </div>
+  </div>
+  <div class="news-body">
+    {% for news in newss %}
+  <div>
+    <a href="{{news.link}}">   
+      
+      
+                      <div class="newsbody">
+                          <div class="newsdes">
+                                <h2> {{news.name}} </h2>
+                                  <p> {{news.description}} </p>
+                                  <hr>
+                              <i> {{news.datetime}} </i>
+                          </div>
+                          <!--anh-->
+                          
+                              <div class="newsimg"><a href="{{news.link}}">
+                                <img src="{{news.img.url}}"> </a>
+                              </div>
+                      </div>
 
+                      
+    </a>
+  </div> 
+
+    {% endfor %}  
+</div>
     
 {% endblock content %}
 
