@@ -124,9 +124,6 @@
 }
 
 
-.agent-abilities video{
-  opacity: .8;
-}
 .agent-abilities p{
   opacity: .7;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -135,21 +132,21 @@
 }
 
 
-.agent-abilities img:hover{
+/* .agent-abilities img:hover{
   filter: brightness(1);
   background-color: rgb(253, 54, 54);
   transition: .2s ease-in-out;
   transform: scale(1.05);
-}
+} */
 
 
 
-.agent-abilities p:hover {
+/* .agent-abilities p:hover {
   opacity: 1;
   transition: .3s ease;
   transform: scale(1.05);
-}
-.agent-abilities p:hover + video{
+} */
+/* .agent-abilities p:hover + video{
   opacity: 1;
   transition: .3s ease-in-out;
 }
@@ -157,4 +154,4 @@
   opacity: 1;
   transition: .3s ease;
   transform: scale(1.05);
-}
+} */

@@ -104,6 +104,9 @@
     font-family: valorant;
     font-weight: bold;
 }
+.gundetail h5{
+    font-family:'Courier New', Courier, monospace;
+}
 .gundetail p{
     font-family:'Courier New', Courier, monospace;
     text-align: center;
