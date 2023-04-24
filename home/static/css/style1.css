@@ -9,7 +9,6 @@ body {
   font-family: RixSGo,Tahoma,sans-serif;
   background-color: antiquewhite;
   background-image: url('../img/valoranttext.png');
-  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-blend-mode:soft-light;
@@ -866,6 +865,14 @@ p {
   padding-bottom: 50px;
   padding-top: 50px;
   margin: auto;
+}
+.FAQtitle img{
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-self: center;
+  width: 50%;
+  height: auto;
 }
 .FAQtitle h2{
   display: flex;
