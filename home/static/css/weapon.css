@@ -36,10 +36,17 @@
     text-align: left;
     padding-left:0;
     opacity:0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
 }
-.arsenal-content-item-text h3{
+.arsenal-content-item-text h2{
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    font-family: valorant;
+}
+.arsenal-content-item-text h5{
+    opacity: 0;
     color: black;
     text-align: left;
     padding-left: 20px;
@@ -47,11 +54,25 @@
 }
 
 .arsenal-content-item-img img{
+    filter: drop-shadow(0.8em 0.8em 0em);
+    color: gray;
     position: relative;
     height: auto;
     width: 100%;
 }
+.arsenal-content-item-img h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 10px;
+    color: rgb(94, 94, 94);
+    opacity: 1;
+    padding-left: 20px;
+}
+.arsenal-content-item:hover h4{
+    opacity: 0;
+}
 .arsenal-content-item:hover img { 
+    filter: drop-shadow(0em 0em 1em);
     transform: scale(.95);
     opacity: .5;
     color: black;
@@ -63,12 +84,21 @@
     transition: .2s ease-in-out;
     padding-left: 80px;
 }
-.arsenal-content-item:hover h3{
+.arsenal-content-item:hover h2{
     transition: .2s ease-in-out;
     color: rgb(255, 255, 255);
     opacity: 1;
     text-align: left;
-    padding-left: 160px;
+    padding-left: 20px;
+
+}
+.arsenal-content-item:hover h5{
+    opacity: 1;
+    transition: .2s ease-in-out;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    text-align: left;
+    padding-left: 80px;
 
 }
 

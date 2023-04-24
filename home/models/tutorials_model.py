@@ -3,7 +3,7 @@ from cloudinary.models import CloudinaryField
 from django.urls import reverse
 # Create your models here.
 
-class Signup(models.Model):
+class Tutorial(models.Model):
     
     #tutorials
     img1 = CloudinaryField('img')
@@ -11,8 +11,8 @@ class Signup(models.Model):
 
 
     class Meta:
-        verbose_name = "signup"
-        verbose_name_plural = "signups"
+        verbose_name = "tutorial"
+        verbose_name_plural = "tutorials"
     
     
     def save(self, *args, **kwargs):

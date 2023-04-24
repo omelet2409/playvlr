@@ -24,6 +24,7 @@ class Weapon(models.Model):
     img = CloudinaryField('img')
     slug = models.SlugField()
     description = models.CharField(max_length=500)
+    bio = models.CharField(max_length=200)
     
     
 

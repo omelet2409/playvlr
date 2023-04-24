@@ -27,7 +27,7 @@ from home.views.weapons_view import WeaponDetailView
 from home.views.home_view import HomeListView
 from home.views.specs_view import SpecsListView
 from home.views.news_view import NewsListView
-from home.views.signups_view import SignupListView
+from home.views.tutorials_view import TutorialListView
 from home.views.premiers_view import PremierListView
 
 
@@ -84,9 +84,9 @@ urlpatterns = [
         name = 'news',
     ),
     path(
-        route= 'signups/',
-        view = SignupListView.as_view(),
-        name= 'signups',
+        route= 'tutorials/',
+        view = TutorialListView.as_view(),
+        name= 'tutorials',
     ),
     path(
         route= 'premiers/',
