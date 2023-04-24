@@ -120,7 +120,8 @@
   filter: brightness(.2);
   justify-content: center;
   border: px solid red;
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 
