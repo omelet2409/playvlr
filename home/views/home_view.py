@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from home.models.home_model import Home
 from django.views.generic import ListView
+
+
 # Create your views here.
 
 class HomeListView(ListView):
@@ -13,4 +15,5 @@ class HomeListView(ListView):
         context = super().get_context_data(**kwargs)
         context["homes"] = Home.objects.all() 
         return context
+
 
