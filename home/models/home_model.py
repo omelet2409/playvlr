@@ -8,6 +8,7 @@ class Home(models.Model):
     
     name = models.CharField(max_length=100)
     link = models.CharField(max_length=200)
+    a = models.CharField( max_length=50)
     
     
     class Meta:
