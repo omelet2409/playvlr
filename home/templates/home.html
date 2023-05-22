@@ -35,6 +35,13 @@
     <!--1.intro-->
     <div class = "home-content-body">
       <!--intro-->
+        {% for home in homes%}
+            <div class="home-bp">
+            
+              <p> {{home.name}} </p>
+              <img src = {{home.img.url}}>
+            </div>
+        {% endfor %}
             <div class="home-cb1">
                 <div class="home-cb1-text">
                     <h1> we are valorant </h1>

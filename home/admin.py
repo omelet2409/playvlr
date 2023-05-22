@@ -7,6 +7,7 @@ from home.models.specs_model import Spec
 from home.models.newss_model import News
 from home.models.tutorials_model import Tutorial
 from home.models.premiers_model import Premier
+from home.models.battlepass_model import Battlepass
 
 # Register your models here.
 admin.site.register(Agent)
@@ -17,3 +18,4 @@ admin.site.register(Spec)
 admin.site.register(News)
 admin.site.register(Tutorial)
 admin.site.register(Premier)
+admin.site.register(Battlepass)

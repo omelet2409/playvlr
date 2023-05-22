@@ -1,0 +1,63 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    What's new in Episode 6 Act II
+{% endblock title%}
+
+{% block content %}
+<div class="battlepass">
+
+</div>
+  <div class="news-header">
+    <div class="FAQtitle">
+      {% for battlepass in battlepasss %}
+      <h3> {{battlepass.datetime}} </h3>
+      {% endfor %}
+      <h1> WHAT'S NEW IN EPISODE 6 ACT II</h1>
+      <p> Premier is VALORANT’s team-based competitive system, and the Premier Global Open Beta launches April 25. Watch the video below where we run through the basics so that you and your team are ready on day one. For any additional questions, please check out the FAQ below.</p>
+      <iframe  src="https://res.cloudinary.com/dtbkn91rt/video/upload/v1681929042/Open_Beta_To%C3%A0n_C%E1%BA%A7u-_T%E1%BB%95ng_Quan____Premier_-_VALORANT_ax2pfo.mp4">
+      </iframe>
+      <br>
+      <br>
+      <p> Say hello to Gekko, our newest Initiator Agent. He and his crew of four are ready to clear corners, scout areas, and even plant and defuse the Spike for you. But that’s not all. You’ve voiced your demands, waited, and now it’s finally here: Oni has returned along with a new melee.  </p>
+      <p> Don’t forget to also check out the new Battlepass, and lastly, start climbing—ranks have been reset. </p>
+      <img src ="https://res.cloudinary.com/dtbkn91rt/image/upload/v1682315287/Screenshot_2023-04-24_124737_zaytka.png"/> 
+      <h2> PREMIER GLOBAL OPEN BETA FAQ </h2>
+      
+  </div>
+  </div>
+  <div class="news-body">
+    {% for news in newss %}
+  <div>
+    <a href="{{news.link}}">   
+      
+      
+                      <div class="newsbody">
+                          <div class="newsdes">
+                                <h2> {{news.name}} </h2>
+                                  <p> {{news.description}} </p>
+                                  <hr>
+                              <i> {{news.datetime}} </i>
+                          </div>
+                          <!--anh-->
+                          
+                              <div class="newsimg"><a href="{{news.link}}">
+                                <img src="{{news.img.url}}"> </a>
+                              </div>
+                      </div>
+
+                      
+    </a>
+  </div> 
+
+    {% endfor %}  
+</div>
+    
+{% endblock content %}
+
+
+
+               
+
+

@@ -836,7 +836,23 @@ p {
   margin-bottom: 5px;
   background-image: url(../img/FAQheader.jpg);
 }
-
+.battlepass{
+  color: #ece7e1;
+  height: 800px;
+  padding: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+  height: 700px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+  background-image: url(../img/battlepass.jpg);
+}
 
 .FAQ {
   position: relative;
@@ -998,6 +1014,19 @@ p {
   flex-flow: column;
   justify-content: space-between;
   width: 1300px;
+}
+.home-bp img{
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.home-bp p{
+  position: absolute;
+  
 }
 .home-cb1 {
   display: flex;

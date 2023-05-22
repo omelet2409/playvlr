@@ -29,6 +29,7 @@ from home.views.specs_view import SpecsListView
 from home.views.news_view import NewsListView
 from home.views.tutorials_view import TutorialListView
 from home.views.premiers_view import PremierListView
+from home.views.battlepass_view import BattlepassListView
 
 
 app_name = "home"
@@ -92,6 +93,11 @@ urlpatterns = [
         route= 'premiers/',
         view = PremierListView.as_view(),
         name= 'premiers',
+    ),
+    path(
+        route= 'battlepass/',
+        view = BattlepassListView.as_view(),
+        name= 'battlepass',
     ),
     
     
