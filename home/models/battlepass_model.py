@@ -5,8 +5,8 @@ from django.urls import reverse
 
 class Battlepass(models.Model):
     name = models.CharField(max_length=200)
-    datetime = models.DateTimeField(auto_now=False)
     bio =  models.CharField( max_length=1000)
+    img = CloudinaryField('img')
     
     
     class Meta: 

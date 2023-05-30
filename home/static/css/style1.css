@@ -854,6 +854,33 @@ p {
   background-image: url(../img/battlepass.jpg);
 }
 
+.battlepass-body {
+  margin: 0 auto;
+  position: relative;
+  display: column;
+  justify-self: center;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 10px;
+}
+.battlepass-body img{
+  margin: 0 auto;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-self: center;
+  height: auto;
+  width: 100%;
+  border: rgba(255, 0, 0, 0) solid 4px;
+}
+.battlepass-body img:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+  border: red solid 4px;
+}
+.battlepass-body h2{
+  padding: 10px 0px 10px 0px;
+}
+
 .FAQ {
   position: relative;
   display: column;
@@ -1024,9 +1051,22 @@ p {
   z-index: -1;
 }
 
+.home-bp h1{
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 100px;
+  font-family: valorant;
+  
+}
+
 .home-bp p{
   position: absolute;
-  
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 90px 90px 90px 100px;
 }
 .home-cb1 {
   display: flex;

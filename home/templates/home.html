@@ -37,9 +37,11 @@
       <!--intro-->
         {% for home in homes%}
             <div class="home-bp">
-            
-              <p> {{home.name}} </p>
+              <a href="{% url 'home:battlepass'%}">
+              <p> episode 6 - act 3 - year 3</p>
+              <h1> {{home.name}} </h1>
               <img src = {{home.img.url}}>
+              </a>
             </div>
         {% endfor %}
             <div class="home-cb1">
