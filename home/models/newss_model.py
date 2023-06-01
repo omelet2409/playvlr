@@ -9,7 +9,7 @@ class News(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=500)
     img = CloudinaryField('img')
-    datetime = models.DateTimeField(auto_now=True)
+    datetime = models.DateTimeField(auto_now=False)  
     link = models.URLField(max_length=200)
     
     class Meta:
