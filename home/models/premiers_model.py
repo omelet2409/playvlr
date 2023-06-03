@@ -17,5 +17,5 @@ class Premier(models.Model):
     def __str__(self):
         return self.question
     
-    def get_absolute_url(self):
-        return reverse('newss', kwargs={'slug': self.slug})
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
