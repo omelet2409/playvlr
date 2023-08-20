@@ -1,33 +1,33 @@
-{% extends 'home_base.html' %}
-
-{% load static %}
-{% block title %}
-    TUTORIALS
-{% endblock title%}
-
-{% block content %}
+{% extends 'home_base.html' %} {% load static %} {% block title %} TUTORIALS {%
+endblock title%} {% block content %}
 <div class="content-body">
-    <div class="tutorials-content-header">
-        <h1> BEGINNER'S GUIDE </h1>
-        <p> Straight from the files of Brimstone, this is the VALORANT Beginner’s Guide. Whether this is your first rotation or you're needing a refresher, we figure it’s best you take it from the Agent who’s seen it all before. </p>
-        <p>Below is what to know before your first game. Pay attention. Might learn something.
+  <div class="tutorials-content-header">
+    <h1>BEGINNER'S GUIDE</h1>
+    <p>
+      Straight from the files of Brimstone, this is the VALORANT Beginner’s
+      Guide. Whether this is your first rotation or you're needing a refresher,
+      we figure it’s best you take it from the Agent who’s seen it all before.
+    </p>
+    <p>
+      Below is what to know before your first game. Pay attention. Might learn
+      something.
+    </p>
+    <h2>now let's get started!</h2>
+  </div>
+  <hr />
 
-        </p>
-        <h2> now let's get started! </h2>
-    </div>
-    <hr>
+  {% for tutorial in tutorials %}
+  <div class="tutorials-content">
+    <img src="{{tutorial.img1.url}}" />
+    <p>./ {{tutorial.description}}</p>
+    <p></p>
+  </div>
+</div>
+{% endfor %}
 
-    {% for tutorial in tutorials %}
-        <div class="tutorials-content">
-            <img src="{{tutorial.img1.url}}"/>
-            <p> ./ {{tutorial.description}} <p>
-        </div>
-    </div>
-    {% endfor %}
-
-<br>
-<br>
-<hr>
-<br>
+<br />
+<br />
+<hr />
+<br />
 
 {% endblock content%}

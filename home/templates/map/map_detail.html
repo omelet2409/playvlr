@@ -1,52 +1,39 @@
-{% extends 'home_base.html'%}
-
-{% load static %}
-{% block title %}
-      {{map.name}}
-{% endblock title %}
-
-{% block content %}
+{% extends 'home_base.html'%} {% load static %} {% block title %} {{map.name}}
+{% endblock title %} {% block content %}
 <div class="content-body">
-        <main class="agentsMainColumn">
-          <div class="agentsMainText">
-            <h2>//{{map.name}}</h2>
-            <h4> Located at: {{map.map_location}}</h4>
-            <p>
-              {{map.description}}
-            </p>
-          </div>
-        </main>
-
-
-    <!--body-->
-    
-    <div class="mcontainer">
-      <div class= "mmain ">
-        <a>
-          <img class="img-feature">
-        </a>
-          <div class =" control prev"> <img src ="{% static 'img/left.png' %}" ></div>
-          <div class =" control next"> <img src ="{% static 'img/right.png' %}"> </div>
-          
-      </div>
-      
-        
-      <div class="list-image">
-        <div> <img src="{{map.img1.url}}" alt="img"> </div>
-        <div> <img src="{{map.img2.url}}" alt="img"> </div>
-        <div> <img src="{{map.img3.url}}" alt="img"> </div>
-        <div> <img src="{{map.img4.url}}" alt="img"> </div>
-        <div> <img src="{{map.img5.url}}" alt="img"> </div>
-        <div> <img src="{{map.img6.url}}" alt="img"> </div>
-        <div> <img src="{{map.img7.url}}" alt="img"> </div>
-        <div> <img src="{{map.img8.url}}" alt="img"> </div>
-      </div>
-       
-    
+  <main class="agentsMainColumn">
+    <div class="agentsMainText">
+      <h2>//{{map.name}}</h2>
+      <h4>Located at: {{map.map_location}}</h4>
+      <p>{{map.description}}</p>
     </div>
+  </main>
+
+  <!--body-->
+
+  <div class="mcontainer">
+    <div class="mmain">
+      <a>
+        <img class="img-feature" />
+      </a>
+      <div class="control prev"><img src="{% static 'img/left.png' %}" /></div>
+      <div class="control next"><img src="{% static 'img/right.png' %}" /></div>
+    </div>
+
+    <div class="list-image">
+      <div><img src="{{map.img1.url}}" alt="img" /></div>
+      <div><img src="{{map.img2.url}}" alt="img" /></div>
+      <div><img src="{{map.img3.url}}" alt="img" /></div>
+      <div><img src="{{map.img4.url}}" alt="img" /></div>
+      <div><img src="{{map.img5.url}}" alt="img" /></div>
+      <div><img src="{{map.img6.url}}" alt="img" /></div>
+      <div><img src="{{map.img7.url}}" alt="img" /></div>
+      <div><img src="{{map.img8.url}}" alt="img" /></div>
+    </div>
+  </div>
 </div>
-<br>
-<hr>
-<br>
-<br>
+<br />
+<hr />
+<br />
+<br />
 {% endblock content %}

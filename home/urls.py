@@ -36,70 +36,70 @@ app_name = "home"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    
+
+
     path(
         route='',
-        view = HomeListView.as_view(),
-        name= 'home',
+        view=HomeListView.as_view(),
+        name='home',
     ),
     path(
-        route= 'agents/',
-        view = AgentListView.as_view(),
-        name= 'agents',
+        route='agents/',
+        view=AgentListView.as_view(),
+        name='agents',
     ),
     path(
-        route= 'agents/<str:slug>/',
-        view = AgentDetailView.as_view(),
-        name= 'agent_detail',
+        route='agents/<str:slug>/',
+        view=AgentDetailView.as_view(),
+        name='agent_detail',
     ),
     path(
-        route= 'maps/',
-        view = MapListView.as_view(),
-        name = 'maps',
+        route='maps/',
+        view=MapListView.as_view(),
+        name='maps',
     ),
     path(
-        route= 'maps/<str:slug>/',
-        view = MapDetailView.as_view(),
-        name = 'map_detail',
+        route='maps/<str:slug>/',
+        view=MapDetailView.as_view(),
+        name='map_detail',
     ),
     path(
         route='weapons/',
-        view = WeaponListView.as_view(),
-        name = 'weapons',
+        view=WeaponListView.as_view(),
+        name='weapons',
     ),
     path(
-        route = 'weapons/<str:slug>/',
-        view = WeaponDetailView.as_view(),
-        name = 'weapon_detail',
+        route='weapons/<str:slug>/',
+        view=WeaponDetailView.as_view(),
+        name='weapon_detail',
     ),
     path(
-        route= 'specs/',
-        view = SpecsListView.as_view(),
-        name = 'specs',
+        route='specs/',
+        view=SpecsListView.as_view(),
+        name='specs',
     ),
-    
+
     path(
-        route = 'news/',
-        view = NewsListView.as_view(),
-        name = 'news',
-    ),
-    path(
-        route= 'tutorials/',
-        view = TutorialListView.as_view(),
-        name= 'tutorials',
+        route='news/',
+        view=NewsListView.as_view(),
+        name='news',
     ),
     path(
-        route= 'premiers/',
-        view = PremierListView.as_view(),
-        name= 'premiers',
+        route='tutorials/',
+        view=TutorialListView.as_view(),
+        name='tutorials',
     ),
     path(
-        route= 'battlepass/',
-        view = BattlepassListView.as_view(),
-        name= 'battlepass',
+        route='premiers/',
+        view=PremierListView.as_view(),
+        name='premiers',
     ),
-    
-    
+    path(
+        route='battlepass/',
+        view=BattlepassListView.as_view(),
+        name='battlepass',
+    ),
+
+
 
 ]

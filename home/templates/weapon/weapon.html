@@ -1,49 +1,43 @@
-{% extends 'home_base.html'%}
-
-{% load static %}
-{% block title %}
-      ARSENALS
-{% endblock title %}
-
+{% extends 'home_base.html'%} 
+{% load static %} 
+{% block title %} ARSENALS 
+{%endblock title %} 
 {% block content %}
 <div class="arsenal-body">
-        <main class="agentsMainColumn">
-          <div class="agentsMainText">
-            <h2>//  CHOOSE YOUR WEAPON </h2>
-            <p>
-              Grap your weapon, prepare your spirits for the bloody gun fight, take out your enemies and Victory will be yours.
-            </p>
+  <main class="agentsMainColumn">
+    <div class="agentsMainText">
+      <h2>// CHOOSE YOUR WEAPON</h2>
+      <p>
+        Grap your weapon, prepare your spirits for the bloody gun fight, take
+        out your enemies and Victory will be yours.
+      </p>
+    </div>
+  </main>
+  <!--body-->
+  <div class="arsenal-all">
+    <div class="arsenal">
+      {% for weapon in weapons %}
+
+      <div class="arsenal-content">
+        <a href="{{weapon.get_absolute_url}}">
+          <div class="arsenal-content-item">
+            <div class="arsenal-content-item-text">
+              <h2>{{weapon.name}}</h2>
+              <h5>TYPE // {{weapon.type}}</h5>
+              <p>{{weapon.description}}</p>
+            </div>
+
+            <div class="arsenal-content-item-img">
+              <img src="{{weapon.img.url}}" />
+              <h4>./ {{weapon.bio}}.</h4>
+            </div>
           </div>
-        </main>
-    <!--body-->
-    <div class="arsenal-all">
-          <div class="arsenal">
+        </a>
+      </div>
 
-            {% for weapon in weapons %}
-            
-                  <div class="arsenal-content">
-                    <a href="{{weapon.get_absolute_url}}">
-
-                      <div class="arsenal-content-item">
-                        <div class="arsenal-content-item-text">
-                            <h2>{{weapon.name}} </h2>
-                            <h5> TYPE // {{weapon.type}} </h5>
-                            <p> {{weapon.description}} </p>
-                        </div>
-                        
-                        <div class="arsenal-content-item-img">
-                            <img src="{{weapon.img.url}}"/>
-                            <h4> ./ {{weapon.bio}}. </h4>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-            
-          
-            {% endfor %}
-          </div>  
-  </div>  
-
+      {% endfor %}
+    </div>
+  </div>
 </div>
-    <!--endbody-->
-    {% endblock content %}
+<!--endbody-->
+{% endblock content %}
