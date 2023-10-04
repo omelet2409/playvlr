@@ -1,10 +1,8 @@
 {% extends 'home_base.html' %}
-
 {% load static %}
 {% block title %}
     VALORANT: Riot's cometitive game
 {% endblock title%}
-
 {% block content %}
   <body>  
     <div class="home-body">
@@ -36,13 +34,13 @@
     <div class = "home-content-body">
       <!--intro-->
         {% for home in homes%}
-            <div class="home-bp">
+            {% comment %} <div class="home-bp">
               <a href="{% url 'home:battlepass'%}">
               <p> episode 6 - act 3 - year 3</p>
               <h1> {{home.name}} </h1>
               <img src = {{home.img.url}}>
               </a>
-            </div>
+            </div> {% endcomment %}
         {% endfor %}
             <div class="home-cb1">
                 <div class="home-cb1-text">
