@@ -1102,8 +1102,14 @@ p {
 }
 
 .home-cb1-img img{
-  padding-right: 100px;
+  padding-right: 200px;
   text-align: right;
+
+}
+.home-cb1-img video{
+  padding-right: 200px;
+  width: 300px; 
+  height: 200px;
 }
 
 

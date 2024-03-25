@@ -8,7 +8,7 @@
     <div class="home-body">
       <div class="videoheader">
         <video autoplay muted loop>
-            <source src="https://res.cloudinary.com/dtbkn91rt/video/upload/v1692553553/VALORANT-_t%E1%BB%B1a_game_b%E1%BA%AFn_s%C3%BAng_chi%E1%BA%BFn_thu%E1%BA%ADt_c%E1%BA%A1nh_tranh_5_%C4%91%E1%BA%A5u_5_l%E1%BA%A5y_c%C3%A1c_nh%C3%A2n_v%E1%BA%ADt_l%C3%A0m_n%E1%BB%81n_t%E1%BA%A3ng_t%E1%BB%AB_Riot_Games_rhdzfk.mp4"></source>
+            <source src="https://res.cloudinary.com/dtbkn91rt/video/upload/v1711342161/VALORANT-_t%E1%BB%B1a_game_b%E1%BA%AFn_s%C3%BAng_chi%E1%BA%BFn_thu%E1%BA%ADt_c%E1%BA%A1nh_tranh_5_%C4%91%E1%BA%A5u_5_l%E1%BA%A5y_c%C3%A1c_nh%C3%A2n_v%E1%BA%ADt_l%C3%A0m_n%E1%BB%81n_t%E1%BA%A3ng_t%E1%BB%AB_Riot_Games_wmzqqe.mp4"></source>
       </video>
       </div>
 
@@ -30,17 +30,54 @@
       </div>
     <br><br><br>
     
+
+
+  </div>
+      <!--anh-->
+      
+          <div class="newsimg"><a href="{{news.link}}">
+            <img src="{{news.img.url}}"> </a>
+          </div>
+  </div>
+
     <!--1.intro-->
+    
     <div class = "home-content-body">
       <!--intro-->
+      <!-- news-->
+          <!--0. latest new-->
+
+    <div class="news-body">
+      {% for news in newss %}
+    <div>
+      <a href="{{news.link}}">   
+          <div class="newsbody">
+              <div class="newsdes">
+                    <h2> {{news.name}} </h2>
+                      <p> {{news.description}} </p>
+                      <hr>
+                  <i> {{news.datetime}} </i>
+              </div>
+              <!--anh-->
+              
+                  <div class="newsimg"><a href="{{news.link}}">
+                    <img src="{{news.img.url}}"> </a>
+                  </div>
+          </div>  
+      </a>
+    </div> 
+  
+      {% endfor %}  
+  </div>
+
         {% for home in homes%}
-            {% comment %} <div class="home-bp">
+            <div class="home-bp">
               <a href="{% url 'home:battlepass'%}">
-              <p> episode 6 - act 3 - year 3</p>
+              <p> {{home.description}}</p>
               <h1> {{home.name}} </h1>
               <img src = {{home.img.url}}>
               </a>
-            </div> {% endcomment %}
+            </div>
         {% endfor %}
             <div class="home-cb1">
                 <div class="home-cb1-text">
@@ -60,7 +97,9 @@
               
               <!--anh-->
                 <div class="home-cb1-img">
-                  <img src="https://res.cloudinary.com/dtbkn91rt/image/upload/v1682164856/gameplay_qwsdjd.gif"/>
+                  <video width="700" height="500" autoplay muted loop>
+                    <source src="https://res.cloudinary.com/dtbkn91rt/video/upload/v1711342373/VALORANT-_t%E1%BB%B1a_game_b%E1%BA%AFn_s%C3%BAng_chi%E1%BA%BFn_thu%E1%BA%ADt_c%E1%BA%A1nh_tranh_5_%C4%91%E1%BA%A5u_5_l%E1%BA%A5y_c%C3%A1c_nh%C3%A2n_v%E1%BA%ADt_l%C3%A0m_n%E1%BB%81n_t%E1%BA%A3ng_t%E1%BB%AB_Riot_Games_2_xodqgp.mp4"></source>
+              </video>
                 </div>
             </div>
       <!--agents-->
