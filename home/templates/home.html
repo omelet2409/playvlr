@@ -47,7 +47,7 @@
       <!-- news-->
           <!--0. latest new-->
 
-    <div class="news-body">
+    {% comment %} <div class="news-body">
       {% for news in newss %}
     <div>
       <a href="{{news.link}}">   
@@ -68,15 +68,24 @@
     </div> 
   
       {% endfor %}  
-  </div>
+  </div> {% endcomment %}
 
         {% for home in homes%}
             <div class="home-bp">
-              <a href="{% url 'home:battlepass'%}">
-              <p> {{home.description}}</p>
-              <h1> {{home.name}} </h1>
+              
+              <p> EPISODE {{home.episode}} - ACT {{home.act}} - YEAR {{home.year}}</p>
+                <h1> {{home.name}} </h1>
+                  <a href="{% url 'home:battlepass' %}">
+                    <button class="btn">
+                      <span class="btn__inner">
+                          <span class="btn__slide"></span>
+                          <span class="btn__content" style="text-decoration: none";>Battlepass</span>
+                      </span>
+                    </button>
+                  </a>
               <img src = {{home.img.url}}>
-              </a>
+              
+            
             </div>
         {% endfor %}
             <div class="home-cb1">

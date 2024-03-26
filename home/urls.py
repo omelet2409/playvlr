@@ -30,6 +30,7 @@ from home.views.news_view import NewsListView
 from home.views.tutorials_view import TutorialListView
 from home.views.premiers_view import PremierListView
 from home.views.battlepass_view import BattlepassListView
+from home.views.gameupdate_view import GameupdateListView
 
 
 app_name = "home"
@@ -99,7 +100,11 @@ urlpatterns = [
         view=BattlepassListView.as_view(),
         name='battlepass',
     ),
-
+    path(
+        route='gameupdates/',
+        view=GameupdateListView.as_view(),
+        name='gameupdates',
+    ),
 
 
 ]

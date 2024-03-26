@@ -1,0 +1,50 @@
+{% extends 'home_base.html' %}
+
+{% load static %}
+{% block title %}
+    What's new in Episode 6 Act II
+{% endblock title%}
+
+{% block content %}
+<div class="battlepass">
+
+</div>
+  <div class="news-header">
+    <div class="FAQtitle">
+      
+      <h1>VALORANT PATCH NOTES 8.04</h1>
+      <p> Hi, everyone! Alice here, and welcome to Episode 8 Act 2! </p>
+      <p> This patch we’ve got some updates to Premier just in time for the next Stage, so grab your squad and queue up! We also have some bug fixes across the board, including one to fix KAY/O’s ZERO/point (E), sometimes reporting inaccurate information.</p>
+      <br>
+      <br>
+      
+      
+      
+  </div>
+  </div>
+  <div class="gameupdate-body">
+    {% for gameupdate in gameupdates %}
+  <div>
+     
+      
+      
+      <div >
+        <h2> {{gameupdate.title}} </h2>
+        <h4> ./{{gameupdate.big_title}} </h4>
+        <pre> {{gameupdate.field2}} </pre>
+      </div>
+
+                      
+   
+  </div> 
+
+    {% endfor %}  
+</div>
+    
+{% endblock content %}
+
+
+
+               
+
+
