@@ -834,7 +834,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 5px;
-  background-image: url(../img/FAQheader.jpg);
+  background-image: url(../img/FAQheader.jpg  );
 }
 .battlepass{
   color: #ece7e1;
@@ -851,7 +851,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 5px;
-  background-image: url(../img/battlepass.jpg);
+  background-image: url(../img/battlepassep8.jpg);
 }
 
 .battlepass-body {
@@ -880,6 +880,22 @@ p {
 .battlepass-body h2{
   padding: 10px 0px 10px 0px;
 }
+.gameupdate{
+  height: 800px;
+  padding: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+  background-image: url(..img/bp-update.jpg);
+} 
 
 .gameupdate-body {
   text-align: left;

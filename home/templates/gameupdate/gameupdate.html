@@ -2,26 +2,25 @@
 
 {% load static %}
 {% block title %}
-    What's new in Episode 6 Act II
+    Let's see what the game has changed?
 {% endblock title%}
 
 {% block content %}
-<div class="battlepass">
 
-</div>
-  <div class="news-header">
-    <div class="FAQtitle">
-      
-      <h1>VALORANT PATCH NOTES 8.04</h1>
-      <p> Hi, everyone! Alice here, and welcome to Episode 8 Act 2! </p>
-      <p> This patch we’ve got some updates to Premier just in time for the next Stage, so grab your squad and queue up! We also have some bug fixes across the board, including one to fix KAY/O’s ZERO/point (E), sometimes reporting inaccurate information.</p>
+<div class="justFAQ">
+  <div class="gameupdate">
+  
+  </div>
+  <div class="FAQtitle">
       <br>
       <br>
+      <p> Thanks for your interest in playing the Premier Global Open Beta! </p>
+      <p> After our Alpha in Brazil last year, the team went back to work on Premier, taking feedback from players, and rebuilding parts of the system in order to launch in 2023. You can test some of those changes in the Beta (like scheduling, team zones, and more) and we’ll continue to improve on other areas. The beta is a great way to release a version of Premier we think players will enjoy while also giving us an opportunity to iron out any wrinkles and ensure our foundation is solid for launch. </p>
       
-      
+      <h1> VALORANT PATCH NOTES 8.05</h1>
       
   </div>
-  </div>
+  <hr>
   <div class="gameupdate-body">
     {% for gameupdate in gameupdates %}
   <div>
@@ -38,10 +37,13 @@
    
   </div> 
 
-    {% endfor %}  
-</div>
-    
-{% endblock content %}
+  {% endfor %}
+  <br>
+  <br>
+  <hr>
+  <br>
+  </div>
+  {% endblock content%}
 
 
 
