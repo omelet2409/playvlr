@@ -7,7 +7,7 @@ a{
 
 body {
   font-family: RixSGo,Tahoma,sans-serif;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   background-image: url('../img/valoranttext.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 .upper img {
   position: fixed;
   height: auto;
-  width: 80px;
+  width: 50px;
   right: 20px;
   bottom: 20px;
   filter: brightness(50%);
@@ -65,7 +65,9 @@ nav a {
   text-transform: uppercase;
   color: #ece7e1;
   text-decoration: none;
+  font-size: small;
   font-weight: bold;
+
 }
 
 nav a:hover {
@@ -872,11 +874,11 @@ p {
   width: 100%;
   border: rgba(255, 0, 0, 0) solid 4px;
 }
-.battlepass-body img:hover {
+/* .battlepass-body img:hover {
   opacity: 0.8;
   transform: scale(0.98);
   border: red solid 4px;
-}
+} */
 .battlepass-body h2{
   padding: 10px 0px 10px 0px;
 }
@@ -1110,12 +1112,12 @@ p {
 }
 .home-cb1-text {
   padding-left: 50px;
-  width: 400px;
+  width: 600px;
 }
 .home-cb1-text h1{
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: lighter;
+  font-family:valorant;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .home-cb1-text h3{
@@ -1125,6 +1127,8 @@ p {
 }
 .home-cb1-text p {
   padding-left: 40px;
+  width: 400px;
+  text-align: justify;
   color: #3a3a3a;
 }
 .home-cb1 button{
@@ -1151,14 +1155,15 @@ p {
 
 .home-cb2 {
   background-color: red;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   background-size: 100% auto;
 }
 .home-cb2-text h1{
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: lighter;
+  font-family: valorant;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .home-cb2-text h3{
@@ -1168,6 +1173,7 @@ p {
 }
 .home-cb2-text p {
   padding-left: 40px;
+  text-align: justify;
   color: #ffffff;
 }
 .home-cb2-text {
@@ -1198,8 +1204,8 @@ p {
 }
 .home-cb3-text h1{
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: lighter;
+  font-family: Valorant;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .home-cb3-text h3{
@@ -1209,6 +1215,7 @@ p {
 }
 .home-cb3-text p {
   padding-left: 40px;
+  text-align: justify;
   color: #3a3a3a;
 }
 .home-cb3-img img{
