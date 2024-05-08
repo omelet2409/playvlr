@@ -12,7 +12,7 @@ class AgentListView(ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["agents"] = Agent.objects.all() 
+        context["agents"] = Agent.objects.all().order_by('name')
         return context
 
 class AgentDetailView(DetailView):

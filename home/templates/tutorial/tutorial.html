@@ -16,12 +16,15 @@ TUTORIALS
       Below is what to know before your first game. Pay attention. Might learn
       something.
     </p>
-    <h2>now let's get started!</h2>
+    <h2>now let's get started!</h2> <hr> <hr>
+    <h2> check out this video first </h2>
   </div>
   <hr />
 
   {% for tutorial in tutorials %}
   <div class="tutorials-content">
+    <iframe src="{{tutorial.video.url}}">
+    </iframe>
     <img src="{{tutorial.img1.url}}" />
     <p>./ {{tutorial.description}}</p>
     <p></p>

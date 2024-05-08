@@ -1239,6 +1239,17 @@ p {
   margin-top: 75px;
   padding: 0px 50px 50px 0px;
 }
+.news-body iframe{
+  display: flex;
+  justify-content: center;
+  height: 560px;
+  width: 1000px;
+  position: relative;
+  top: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
 
 
 
@@ -1270,6 +1281,17 @@ p {
   margin: auto;
 }
 
+.tutorials-content iframe{
+  display: flex;
+  justify-content: center;
+  height: 560px;
+  width: 1000px;
+  position: relative;
+  top: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
 .tutorials-content {
   position: relative;
   display: column;

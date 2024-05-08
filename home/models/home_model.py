@@ -2,6 +2,8 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 from django.urls import reverse
 from django.utils.text import slugify
+from django.contrib.auth.models import User
+
 # Create your models here.
 
 class Home(models.Model):
@@ -12,8 +14,17 @@ class Home(models.Model):
     act = models.CharField(max_length=10)
     year = models.CharField(max_length=10)
     img = CloudinaryField('img')
+    #data
     
-    
+    agent = models.CharField(max_length=50)
+    maps = models.CharField(max_length=50)
+    arresnals = models.CharField(max_length=50)
+    specs = models.CharField(max_length=50)
+    news = models.CharField(max_length=50)
+    battlepass = models.CharField(max_length=50)
+    premieres = models.CharField(max_length=50)
+    tutorials = models.CharField(max_length=50)
+
     class Meta:
         verbose_name = ("home")
         verbose_name_plural = ("homes")

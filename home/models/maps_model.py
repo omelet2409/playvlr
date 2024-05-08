@@ -25,6 +25,8 @@ class Map(models.Model):
     img7 = CloudinaryField('img')
     img8 = CloudinaryField('img')
     
+    
+
     class Meta:
         verbose_name = ("map")
         verbose_name_plural = ("maps")

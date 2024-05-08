@@ -8,6 +8,7 @@ class Tutorial(models.Model):
     #tutorials
     img1 = CloudinaryField('img')
     description = models.CharField(max_length=1000)
+    video = CloudinaryField(resource_type='video')
 
 
     class Meta:
