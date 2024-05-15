@@ -21,7 +21,7 @@ TUTORIALS
   </div>
   <hr />
 
-  {% for tutorial in tutorials %}
+   {% for tutorial in tutorials %}
   <div class="tutorials-content">
     <iframe src="{{tutorial.video.url}}">
     </iframe>
@@ -29,8 +29,10 @@ TUTORIALS
     <p>./ {{tutorial.description}}</p>
     <p></p>
   </div>
-</div>
-{% endfor %}
+  </div>
+    {% endfor %}
+
+    
 
 <br />
 <br />

@@ -12,7 +12,7 @@ class MapListView(ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["maps"] = Map.objects.all() 
+        context["maps"] = Map.objects.all().order_by('name')
         return context
     
 class MapDetailView(DetailView):

@@ -11,6 +11,7 @@ class Map(models.Model):
     description = models.CharField(max_length=500)
     img = CloudinaryField('img')
     slug = models.SlugField()
+    status = models.CharField(max_length=400)
     
     #map detail
     
