@@ -38,7 +38,7 @@
 }
 
 .agents-container img:hover{
-    border: 5px solid red;
+    border: 5px solid rgb(179, 26, 26);
     filter: grayscale(0%);
     transition: .2s ease-in-out;
     background-image: url(../img/agent-background-generic.gif);

@@ -25,15 +25,13 @@
             {% for agent in agents %}
             <section class="other-agents">
               
-             
+              <div class="agents-container"> 
                 <a href="{{agent.get_absolute_url}}" id="1">
-                  <div class="agents-container">
-                    <img src="{{agent.avatar_icon.url}}" alt="" />
-                    <p>{{agent.name}}</p>
-                  </div>
+                  <img src="{{agent.avatar_icon.url}}" alt="" />
+                  <p>{{agent.name}}</p>
                 </a>
-                
-              </div>
+              </div>  
+              
             </section>
             {% endfor %}
         </div>
