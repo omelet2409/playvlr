@@ -18,6 +18,24 @@
     filter: grayscale(80%);
     border: 5px solid rgba(196, 2, 2, 0);
 }
+.agents-container p{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-family: valorant;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+}
+.agents-container:hover p{
+    opacity: 1;
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    transition: .2s ease-in-out;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
 
 .agents-container img:hover{
     border: 5px solid red;
