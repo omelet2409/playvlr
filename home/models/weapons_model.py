@@ -26,10 +26,9 @@ class Weapon(models.Model):
     description = models.CharField(max_length=500)
     bio = models.CharField(max_length=200)
     
-    
+    video = CloudinaryField(resource_type='video')
 
     
-
     class Meta:
         verbose_name = ("weapon")
         verbose_name_plural = ("weapons")

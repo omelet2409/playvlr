@@ -109,15 +109,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /* gun detail */ 
 .gundetail {
     justify-content: center;
@@ -146,7 +137,18 @@
     
     margin-right: 100px;
 }
-
+.gun-video{
+    display: flex;
+    justify-content: center;
+    height: 560px;
+    width: 1000px;
+    position: relative;
+    top: 0px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    border: 1px red ;
+}
 .gundetail .gundetail-description{
     text-align: left;
 }
